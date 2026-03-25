@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <title>Sản Phẩm - Sneaker Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <style data-tag="reset-style-sheet">
+      html{line-height:1.15;}body{margin:0;}*{box-sizing:border-box;border-width:0;border-style:solid;-webkit-font-smoothing:antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption{margin:0;padding:0;}button{background-color:transparent;}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0;}a{color:inherit;text-decoration:inherit;}img{display:block;}
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      body { font-family: Inter, sans-serif; background: var(--dl-color-www.figma.com-athensgray); color: var(--dl-color-www.figma.com-codgray); }
+
+      /* NAVBAR */
+      .navbar {
+        width: 100%; background: var(--dl-color-www.figma.com-codgraywhite);
+        display: flex; align-items: center; justify-content: space-between;
+        padding: 16px 32px; position: sticky; top: 0; z-index: 100;
+      }
+      .navbar-logo { color: #fff; font-size: 20px; font-weight: 700; letter-spacing: 2px; }
+      .navbar-links { display: flex; gap: 24px; }
+      .navbar-links a { color: rgba(255,255,255,0.8); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+      .navbar-links a:hover, .navbar-links a.active { color: #fff; }
+
+      /* HERO */
+      .hero {
+        background: linear-gradient(90deg, rgba(16,23,39,1) 0%, rgba(53,65,82,1) 100%);
+        padding: 48px 32px; text-align: center;
+      }
+      .hero h1 { color: #fff; font-size: 36px; font-weight: 700; margin-bottom: 8px; }
+      .hero p { color: rgba(255,255,255,0.7); font-size: 16px; }
+
+      /* FILTER */
+      .filter-bar {
+        display: flex; gap: 12px; padding: 24px 32px; flex-wrap: wrap;
+        background: #fff; border-bottom: 1px solid var(--dl-color-www.figma.com-mischka);
+      }
+      .filter-btn {
+        padding: 8px 20px; border-radius: 24px; border: 1px solid var(--dl-color-www.figma.com-mischka);
+        font-size: 13px; font-weight: 600; cursor: pointer; background: #fff;
+        color: var(--dl-color-www.figma.com-codgray); transition: all 0.2s;
+      }
+      .filter-btn:hover, .filter-btn.active {
+        background: var(--dl-color-www.figma.com-codgraywhite); color: #fff; border-color: var(--dl-color-www.figma.com-codgraywhite);
+      }
+
+      /* GRID */
+      .products-section { padding: 40px 32px; }
+      .products-grid {
+        display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+      }
+      @media(max-width: 1100px) { .products-grid { grid-template-columns: repeat(3, 1fr); } }
+      @media(max-width: 767px) { .products-grid { grid-template-columns: repeat(2, 1fr); } .filter-bar, .products-section { padding: 16px; } }
+      @media(max-width: 479px) { .products-grid { grid-template-columns: 1fr; } }
+
+      /* CARD */
+      .product-card {
+        background: #fff; border-radius: 10px; overflow: hidden;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1); transition: box-shadow 0.2s, transform 0.2s;
+        cursor: pointer; text-decoration: none; color: inherit; display: flex; flex-direction: column;
+      }
+      .product-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.15); transform: translateY(-4px); }
+      .card-img {
+        width: 100%; aspect-ratio: 1/1; background-size: cover; background-position: center;
+        background-color: var(--dl-color-www.figma.com-athensgray); position: relative;
+      }
+      .card-badges { position: absolute; top: 12px; left: 12px; display: flex; flex-direction: column; gap: 4px; }
+      .badge {
+        padding: 4px 8px; border-radius: 8px; font-size: 11px; font-weight: 700;
+        color: #fff; display: inline-block;
+      }
+      .badge-hot { background: var(--dl-color-www.figma.com-redorange); }
+      .badge-new { background: var(--dl-color-www.figma.com-malachite); }
+      .badge-sale { background: var(--dl-color-www.figma.com-dodgerblue); }
+      .badge-bestseller { background: var(--dl-color-www.figma.com-dodgerblue); }
+      .card-info { padding: 16px; display: flex; flex-direction: column; gap: 4px; flex: 1; }
+      .card-brand { font-size: 11px; color: var(--dl-color-www.figma.com-palesky); }
+      .card-name { font-size: 14px; font-weight: 700; line-height: 1.4; height: 40px; overflow: hidden; }
+      .card-category { font-size: 11px; color: var(--dl-color-www.figma.com-palesky); }
+      .card-price { font-size: 16px; font-weight: 700; margin-top: 8px; color: var(--dl-color-www.figma.com-codgray); }
+
+      /* FOOTER */
+      .footer {
+        background: var(--dl-color-www.figma.com-codgraywhite); color: rgba(255,255,255,0.7);
+        padding: 40px 32px; text-align: center; font-size: 14px; margin-top: 40px;
+      }
+      .footer a { color: rgba(255,255,255,0.7); margin: 0 12px; }
+      .footer a:hover { color: #fff; }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <span class="navbar-logo">SNEAKER STORE</span>
+      <div class="navbar-links">
+        <a href="./index.html">Trang Chủ</a>
+        <a href="./product.html" class="active">Sản Phẩm</a>
+        <a href="#">Liên Hệ</a>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <h1>Tất Cả Sản Phẩm</h1>
+      <p>Khám phá bộ sưu tập sneaker độc quyền</p>
+    </div>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterProducts('all', this)">Tất Cả</button>
+      <button class="filter-btn" onclick="filterProducts('collab', this)">Collab</button>
+      <button class="filter-btn" onclick="filterProducts('nike', this)">Nike</button>
+      <button class="filter-btn" onclick="filterProducts('jordan', this)">Jordan</button>
+      <button class="filter-btn" onclick="filterProducts('adidas', this)">Adidas</button>
+      <button class="filter-btn" onclick="filterProducts('sunglasses', this)">Kính Mắt</button>
+    </div>
+
+    <div class="products-section">
+      <div class="products-grid" id="productsGrid">
+
+        <div class="product-card" data-category="collab jordan">
+          <div class="card-img" style="background-image: url('public/tq_gquycljss2-6i4w-1500w.png')">
+            <div class="card-badges"><span class="badge badge-hot">HOT</span></div>
+          </div>
+          <div class="card-info">
+            <span class="card-brand">Jordan x Dior</span>
+            <div class="card-name">Air Jordan 1 x Dior High</div>
+            <span class="card-category">Dior Collab</span>
+            <div class="card-price">85.000.000 ₫</div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="collab jordan">
+          <div class="card-img" style="background-image: url('public/tq_ypwzdgntei-cghv-1500w.png')">
+            <div class="card-badges"><span class="badge badge-hot">HOT</span></div>
+          </div>
+          <div class="card-info">
+            <span class="card-brand">Jordan x Travis Scott</span>
+            <div class="card-name">Air Jordan 1 x Travis Scott</div>
+            <span class="card-category">Travis Scott Collab</span>
+            <div class="card-price">42.000.000 ₫</div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="collab nike">
+          <div class="card-img" style="background-image: url('public/tq_arooc0aocm-oerl-1500w.png')">
+            <div class="card-badges"><span class="badge badge-hot">HOT</span></div>
+          </div>
+          <div class="card-info">
+            <span class="card-brand">Nike x Off-White</span>
+            <div class="card-name">Nike x Off-White Collection</div>
+            <span class="card-category">Off-White Collab</span>
+            <div class="card-price">38.000.000 ₫</div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="jordan">
+          <div class="card-img" style="background-image: url('public/tq_8yjdzrca_d-749q-1500w.png')">
+            <div class="card-badges"><span class="badge badge-hot">HOT</span><span class="badge badge-bestseller">BÁN CHẠY</span></div>
+          </div>
+          <div class="card-info">
+            <span class="card-brand">Nike</span>
+            <div class="card-name">Air Jordan 1 Retro High</div>
+            <span class="card-category">Basketball</span>
+            <div class="card-price">4.200.000 ₫</div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="jordan">
+          <div class="card-img" style="background-image: url('public/tq_6jjjpnihgu-vif4-1500w.png')">
+            <div class="card-badges"><span class="badge badge-hot">HOT</span><span class="badge badge-bestseller">BÁN CHẠY</span></div>
+          </div>
+          <div class="card-info">
+            <span class="card-brand">Nike</span>
+            <div class="card-name">Air Jordan 1 Retro High OG</div>
+            <span class="card-category">Basketball</span>
+            <div class="card-price">4.500.000 ₫</div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="nike">
+          <div class="card-img" style="background-image: url('public/tq_5cykavvul3-uaqp-1500w.png')">
+            <div class="card-badges"><span class="badge badge-sale">BÁN CHẠY</span></div>
+          </div>
+          <div class="card-info">
+            <span class="card-brand">Nike</span>
+            <div class="card-name">Air Force 1 Low White</div>
+            <span class="card-category">Lifestyle</span>
+            <div class="card-price">2.800.000 ₫</div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="nike">
+          <div class="card-img" style="background-image: url('public/tq_c-d7d3r4hd-2ul9-1500w.png')">
+            <div class="card-badges"><span class="badge badge-new">MỚI</span></div>
+          </div>
+          <div class="card-info">
+            <span class="card-brand">Nike</span>
+            <div class="card-name">Nike Dunk Low Retro</div>
+            <span class="card-category">Lifestyle</span>
+            <div class="card-price">3.200.000 ₫</div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="adidas">
+          <div class="card-img" style="background-image: url('public/tq_cloclj0emi-9eh4-1500w.png')">
+            <div class="card-badges"><span class="badge badge-new">MỚI</span></div>
+          </div>
+          <div class="card-info">
+            <span class="card-brand">Adidas</span>
+            <div class="card-name">Adidas Yeezy Boost 350</div>
+            <span class="card-category">Lifestyle</span>
+            <div class="card-price">6.500.000 ₫</div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="adidas">
+          <div class="card-img" style="background-image: url('public/tq_fyln7pxnuw-wl3s-1500w.png')">
+            <div class="card-badges"><span class="badge badge-hot">HOT</span></div>
+          </div>
+          <div class="card-info">
+            <span class="card-brand">Adidas</span>
+            <div class="card-name">Adidas Ultraboost 22</div>
+            <span class="card-category">Running</span>
+            <div class="card-price">4.800.000 ₫</div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="sunglasses">
+          <div class="card-img" style="background-image: url('public/tq_g8dv8a-j3u-8vjj-1500w.png')">
+            <div class="card-badges"><span class="badge badge-new">MỚI</span></div>
+          </div>
+          <div class="card-info">
+            <span class="card-brand">Designer</span>
+            <div class="card-name">Dunk Low Fits - Women</div>
+            <span class="card-category">Women</span>
+            <div class="card-price">3.200.000 ₫</div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="sunglasses">
+          <div class="card-img" style="background-image: url('public/tq_o862czeini-d7ov-1500w.png')">
+            <div class="card-badges"><span class="badge badge-new">MỚI</span></div>
+          </div>
+          <div class="card-info">
+            <span class="card-brand">Designer</span>
+            <div class="card-name">Designer Sunglasses Collection</div>
+            <span class="card-category">Accessories</span>
+            <div class="card-price">8.200.000 ₫</div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="nike">
+          <div class="card-img" style="background-image: url('public/tq_pwie4moijp-dvj-1500w.png')">
+            <div class="card-badges"><span class="badge badge-sale">BÁN CHẠY</span></div>
+          </div>
+          <div class="card-info">
+            <span class="card-brand">Nike</span>
+            <div class="card-name">Nike Air Max 90</div>
+            <span class="card-category">Lifestyle</span>
+            <div class="card-price">3.600.000 ₫</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>© 2026 Sneaker Store. All rights reserved.</p>
+      <div style="margin-top: 12px;">
+        <a href="./index.html">Trang Chủ</a>
+        <a href="./product.html">Sản Phẩm</a>
+      </div>
+    </footer>
+
+    <script>
+      function filterProducts(category, btn) {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        document.querySelectorAll('.product-card').forEach(card => {
+          if (category === 'all' || card.dataset.category.includes(category)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
