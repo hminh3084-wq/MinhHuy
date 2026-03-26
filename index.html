@@ -1,2199 +1,452 @@
 <!DOCTYPE html>
-<html lang="english">
+<html lang="vi">
   <head>
-    <title>exported project</title>
-    <meta property="og:title" content="exported project" />
+    <title>Sneaker Store</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
-
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Inter;
-        font-size: 16px;
-      }
-
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-theme-neutral-dark);
-        background: var(--dl-color-theme-neutral-light);
-
-        fill: var(--dl-color-theme-neutral-dark);
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/animate.css@4.1.1/animate.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+    <link rel="stylesheet" href="./style.css" />
     <style>
-      /* ===== GLOBAL OVERRIDE ===== */
-      html, body { font-family: 'Inter', sans-serif !important; overflow-x: hidden !important; }
+      :root {
+        --dark: #121212;
+        --gray: #697282;
+        --light: #f8fafb;
+        --white: #ffffff;
+        --red: #fa2b36;
+        --blue: #2b7fff;
+        --green: #00c850;
+        --border: #e5e7eb;
+      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body { font-family: Inter, sans-serif; background: var(--light); color: var(--dark); }
+      a { text-decoration: none; color: inherit; }
+      img { display: block; max-width: 100%; }
 
-      /* Ẩn nút TeleportHQ */
-      .frame1536wdefault-link33,
-      .frame1536wdefault-container2 { display: none !important; }
+      /* NAVBAR */
+      .navbar {
+        width: 100%; background: var(--dark); position: sticky; top: 0; z-index: 100;
+        display: flex; align-items: center; justify-content: space-between;
+        padding: 0 40px; height: 64px;
+      }
+      .navbar-logo { color: #fff; font-size: 18px; font-weight: 800; letter-spacing: 3px; }
+      .navbar-links { display: flex; gap: 28px; align-items: center; }
+      .navbar-links a { color: rgba(255,255,255,0.65); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+      .navbar-links a:hover { color: #fff; }
+      .navbar-icons { display: flex; gap: 12px; align-items: center; }
+      .navbar-icons img { width: 22px; height: 22px; filter: invert(1); opacity: 0.7; cursor: pointer; transition: opacity 0.2s; }
+      .navbar-icons img:hover { opacity: 1; }
 
-      /* ===== FIX LAYOUT FIGMA ABSOLUTE/FIXED WIDTH ===== */
-      .frame1536wdefault-thq-divfigcoderoot-elm {
-        width: 100% !important;
-        left: 0 !important;
-        position: relative !important;
-        height: auto !important;
+      /* HERO BANNER */
+      .hero {
+        width: 100%; height: 600px; position: relative; overflow: hidden;
+        background: linear-gradient(90deg, #101727 0%, #354152 100%);
+        display: flex; align-items: center; justify-content: center;
       }
-      .frame1536wdefault-thq-divminhscreen-elm1 {
-        width: 100% !important;
-        height: auto !important;
-        position: relative !important;
+      .hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.4; }
+      .hero-overlay { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
+      .hero-content {
+        position: relative; z-index: 2; text-align: center; max-width: 600px; padding: 0 24px;
       }
-      .frame1536wdefault-thq-divminhscreen-elm2 {
-        width: 100% !important;
-        left: 0 !important;
-        position: relative !important;
-        top: 0 !important;
+      .hero-content h1 { color: #fff; font-size: 56px; font-weight: 800; line-height: 1.1; letter-spacing: -1px; margin-bottom: 16px; }
+      .hero-content p { color: rgba(255,255,255,0.7); font-size: 18px; margin-bottom: 32px; }
+      .hero-btn {
+        display: inline-block; padding: 14px 36px; background: #fff; color: var(--dark);
+        border-radius: 32px; font-size: 15px; font-weight: 700; transition: all 0.2s;
       }
-      .frame1536wdefault-thq-frame1536wdefault-elm {
-        width: 100% !important;
-        height: auto !important;
-        overflow: visible !important;
-      }
+      .hero-btn:hover { background: #f0f0f0; transform: translateY(-2px); }
 
-      /* ===== SECTIONS CANH GIỮA ===== */
-      .frame1536wdefault-thq-sectionpy16-elm1,
-      .frame1536wdefault-thq-sectionpy16-elm2,
-      .frame1536wdefault-thq-sectionpy16-elm3 {
-        display: flex !important;
-        justify-content: center !important;
-        width: 100% !important;
-        padding: 48px 0 !important;
-      }
-      .frame1536wdefault-thq-divcontainer-elm1,
-      .frame1536wdefault-thq-divcontainer-elm2 {
-        max-width: 1400px !important;
-        width: 100% !important;
-        margin: 0 auto !important;
-        padding: 0 32px !important;
-      }
+      /* CATEGORY BANNER */
+      .section { width: 100%; padding: 56px 0; }
+      .section-inner { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
+      .section-bg { background: #f0f2f5; }
 
-      /* ===== GRID SẢN PHẨM ===== */
-      .frame1536wdefault-thq-divgrid-elm1,
-      .frame1536wdefault-thq-divgrid-elm3 {
-        display: grid !important;
-        grid-template-columns: repeat(4, 1fr) !important;
-        gap: 24px !important;
-        width: 100% !important;
-        flex-shrink: unset !important;
-        justify-content: unset !important;
+      .section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 28px; }
+      .section-title { display: flex; align-items: center; gap: 10px; }
+      .section-title img { width: 28px; height: 28px; }
+      .section-title h2 { font-size: 22px; font-weight: 700; white-space: nowrap; }
+      .btn-viewall {
+        display: inline-flex; align-items: center; gap: 6px; padding: 9px 20px;
+        background: var(--dark); color: #fff; border-radius: 24px;
+        font-size: 13px; font-weight: 600; white-space: nowrap; transition: background 0.2s;
       }
-      @media (max-width: 1100px) {
-        .frame1536wdefault-thq-divgrid-elm1,
-        .frame1536wdefault-thq-divgrid-elm3 { grid-template-columns: repeat(3, 1fr) !important; }
-      }
-      @media (max-width: 767px) {
-        .frame1536wdefault-thq-divgrid-elm1,
-        .frame1536wdefault-thq-divgrid-elm3 { grid-template-columns: repeat(2, 1fr) !important; }
-      }
+      .btn-viewall:hover { background: #333; }
+      .btn-viewall img { width: 14px; height: 14px; filter: invert(1); }
 
-      /* ===== HEADER ROW (tiêu đề + nút xem tất cả) ===== */
-      .frame1536wdefault-thq-divflex-elm10,
-      .frame1536wdefault-thq-divflex-elm12 {
-        display: flex !important;
-        align-items: center !important;
-        justify-content: space-between !important;
-        width: 100% !important;
-        gap: 16px !important;
-      }
+      /* PRODUCT GRID */
+      .product-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+      @media(max-width: 1100px) { .product-grid { grid-template-columns: repeat(3, 1fr); } }
+      @media(max-width: 767px) { .product-grid { grid-template-columns: repeat(2, 1fr); } .section-inner { padding: 0 20px; } .navbar { padding: 0 20px; } }
+      @media(max-width: 479px) { .product-grid { grid-template-columns: 1fr; } }
 
-      /* ===== NAVBAR ===== */
-      .frame1536wdefault-thq-divminhscreen-elm1 > div:first-child,
-      [class*="navbar"], [class*="header"] { position: relative; }
+      /* PRODUCT CARD */
+      .pcard {
+        background: var(--white); border-radius: 12px; overflow: hidden;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.08); transition: box-shadow 0.25s, transform 0.25s;
+        display: flex; flex-direction: column;
+      }
+      .pcard:hover { box-shadow: 0 12px 32px rgba(0,0,0,0.16); transform: translateY(-5px); }
+      .pcard-img {
+        width: 100%; aspect-ratio: 1/1; background-size: cover; background-position: center;
+        background-color: #eef0f3; position: relative; overflow: hidden;
+      }
+      .pcard:hover .pcard-img { filter: brightness(0.93); }
+      .pcard-badges { position: absolute; top: 10px; left: 10px; display: flex; flex-direction: column; gap: 4px; z-index: 2; }
+      .badge { padding: 3px 9px; border-radius: 6px; font-size: 11px; font-weight: 700; color: #fff; display: inline-block; }
+      .badge-hot { background: var(--red); }
+      .badge-new { background: var(--green); }
+      .badge-sale { background: var(--blue); }
+      .pcard-info { padding: 14px 16px 18px; display: flex; flex-direction: column; gap: 3px; flex: 1; }
+      .pcard-brand { font-size: 11px; font-weight: 500; color: var(--gray); text-transform: uppercase; letter-spacing: 0.5px; }
+      .pcard-name { font-size: 14px; font-weight: 700; color: var(--dark); line-height: 1.35; margin-top: 2px; }
+      .pcard-cat { font-size: 11px; color: var(--gray); }
+      .pcard-price { font-size: 16px; font-weight: 700; color: var(--dark); margin-top: 8px; }
 
-      /* Fix font chữ menu navbar */
-      .frame1536wdefault-thq-atextsmmargin-elm1 span,
-      .frame1536wdefault-thq-atextsmmargin-elm2 span,
-      .frame1536wdefault-thq-atextsmmargin-elm3 span,
-      .frame1536wdefault-thq-atextsmmargin-elm4 span,
-      .frame1536wdefault-thq-atextsmmargin-elm5 span,
-      .frame1536wdefault-thq-atextsmmargin-elm6 span,
-      .frame1536wdefault-thq-atextsmmargin-elm7 span,
-      .frame1536wdefault-thq-atextsm-elm4 span {
-        font-family: 'Inter', sans-serif !important;
-        font-size: 14px !important;
-        font-weight: 500 !important;
-        letter-spacing: 0 !important;
-        cursor: pointer;
+      /* CATEGORY GRID */
+      .cat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+      @media(max-width: 767px) { .cat-grid { grid-template-columns: 1fr; } }
+      .cat-card {
+        border-radius: 12px; overflow: hidden; position: relative; height: 320px;
+        display: block; transition: transform 0.25s;
       }
-      .frame1536wdefault-thq-atextsmmargin-elm1,
-      .frame1536wdefault-thq-atextsmmargin-elm2,
-      .frame1536wdefault-thq-atextsmmargin-elm3,
-      .frame1536wdefault-thq-atextsmmargin-elm4,
-      .frame1536wdefault-thq-atextsmmargin-elm5,
-      .frame1536wdefault-thq-atextsmmargin-elm6,
-      .frame1536wdefault-thq-atextsmmargin-elm7,
-      .frame1536wdefault-thq-atextsm-elm4 {
-        cursor: pointer;
-        transition: opacity 0.2s;
-      }
-      .frame1536wdefault-thq-atextsmmargin-elm1:hover span,
-      .frame1536wdefault-thq-atextsmmargin-elm2:hover span,
-      .frame1536wdefault-thq-atextsmmargin-elm3:hover span,
-      .frame1536wdefault-thq-atextsmmargin-elm4:hover span,
-      .frame1536wdefault-thq-atextsmmargin-elm5:hover span,
-      .frame1536wdefault-thq-atextsmmargin-elm6:hover span,
-      .frame1536wdefault-thq-atextsmmargin-elm7:hover span,
-      .frame1536wdefault-thq-atextsm-elm4:hover span { opacity: 0.7; }
+      .cat-card:hover { transform: scale(1.02); }
+      .cat-card img { width: 100%; height: 100%; object-fit: cover; }
+      .cat-card-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 60%); }
+      .cat-card-info { position: absolute; bottom: 24px; left: 24px; color: #fff; }
+      .cat-card-info h3 { font-size: 26px; font-weight: 800; letter-spacing: 1px; }
+      .cat-card-info span { font-size: 15px; font-weight: 600; display: flex; align-items: center; gap: 6px; margin-top: 4px; opacity: 0.9; }
 
-      /* ===== SECTION CANH GIỮA ===== */
-      .frame1536wdefault-thq-sectionpy16-elm1,
-      .frame1536wdefault-thq-sectionpy16-elm2,
-      .frame1536wdefault-thq-sectionpy16-elm3 {
-        display: flex !important;
-        justify-content: center !important;
+      /* NEWSLETTER */
+      .newsletter { background: var(--dark); padding: 64px 40px; text-align: center; }
+      .newsletter h2 { color: #fff; font-size: 28px; font-weight: 700; margin-bottom: 10px; }
+      .newsletter p { color: rgba(255,255,255,0.6); font-size: 15px; margin-bottom: 28px; }
+      .newsletter-form { display: flex; gap: 12px; max-width: 480px; margin: 0 auto; }
+      .newsletter-form input {
+        flex: 1; padding: 12px 18px; border-radius: 32px; border: none; outline: none;
+        font-size: 14px; font-family: Inter, sans-serif;
       }
-      .frame1536wdefault-thq-divcontainer-elm1,
-      .frame1536wdefault-thq-divcontainer-elm2 {
-        max-width: 1400px !important;
-        width: 100% !important;
-        margin: 0 auto !important;
+      .newsletter-form button {
+        padding: 12px 24px; background: #fff; color: var(--dark); border: none;
+        border-radius: 32px; font-size: 14px; font-weight: 700; cursor: pointer;
+        font-family: Inter, sans-serif; white-space: nowrap; transition: background 0.2s;
       }
-      .frame1536wdefault-thq-divgrid-elm2 {
-        max-width: 1400px !important;
-        width: 100% !important;
-        margin: 0 auto !important;
-      }
+      .newsletter-form button:hover { background: #e0e0e0; }
 
-      /* ===== FONT CHỮ SECTION TITLES - 1 hàng ===== */
-      .frame1536wdefault-thq-text-elm100,
-      .frame1536wdefault-thq-text-elm129 {
-        font-family: 'Inter', sans-serif !important;
-        font-size: 24px !important;
-        font-weight: 700 !important;
-        letter-spacing: -0.3px !important;
-        white-space: nowrap !important;
-        line-height: 1.2 !important;
-      }
-      /* Container tiêu đề section */
-      .frame1536wdefault-thq-h2text3xl-elm1,
-      .frame1536wdefault-thq-h2text3xl-elm2 {
-        white-space: nowrap !important;
-        overflow: visible !important;
-      }
-
-      /* ===== BUTTON "XEM TẤT CẢ" ===== */
-      .frame1536wdefault-link10,
-      .frame1536wdefault-link18 { display: contents !important; }
-
-      .frame1536wdefault-thq-atextsm-elm1,
-      .frame1536wdefault-thq-atextsm-elm2 {
-        display: inline-flex !important;
-        align-items: center !important;
-        gap: 6px !important;
-        padding: 9px 20px !important;
-        background: #121212 !important;
-        color: #fff !important;
-        border-radius: 24px !important;
-        transition: background 0.2s !important;
-        cursor: pointer !important;
-        white-space: nowrap !important;
-        flex-wrap: nowrap !important;
-        flex-direction: row !important;
-      }
-      .frame1536wdefault-thq-atextsm-elm1:hover,
-      .frame1536wdefault-thq-atextsm-elm2:hover { background: #333 !important; }
-      .frame1536wdefault-thq-text-elm101,
-      .frame1536wdefault-thq-text-elm130 {
-        font-family: 'Inter', sans-serif !important;
-        font-size: 13px !important;
-        font-weight: 600 !important;
-        color: #fff !important;
-        white-space: nowrap !important;
-        line-height: 1 !important;
-      }
-      /* icon mũi tên trong button */
-      .frame1536wdefault-thq-frame-elm11,
-      .frame1536wdefault-thq-frame-elm16 {
-        filter: invert(1) !important;
-        flex-shrink: 0 !important;
-      }
-
-      /* ===== PRODUCT CARDS ===== */
-      /* Badge overlay đúng vị trí */
-      .frame1536wdefault-thq-divabsolute-elm12,
-      .frame1536wdefault-thq-divabsolute-elm13,
-      .frame1536wdefault-thq-divabsolute-elm14,
-      .frame1536wdefault-thq-divabsolute-elm15,
-      .frame1536wdefault-thq-divabsolute-elm25,
-      .frame1536wdefault-thq-divabsolute-elm26 {
-        position: absolute !important;
-        top: 10px !important;
-        left: 10px !important;
-        z-index: 2 !important;
-      }
-
-      /* Badge style */
-      .frame1536wdefault-thq-spanbgred500-elm1,
-      .frame1536wdefault-thq-spanbgred500-elm2,
-      .frame1536wdefault-thq-spanbgred500-elm3,
-      .frame1536wdefault-thq-spanbgred500-elm4,
-      .frame1536wdefault-thq-spanbgred500-elm5 {
-        background: #fa2b36 !important;
-        border-radius: 6px !important;
-        padding: 3px 8px !important;
-        margin-bottom: 4px !important;
-      }
-      .frame1536wdefault-thq-spanbgblue500-elm1,
-      .frame1536wdefault-thq-spanbgblue500-elm2,
-      .frame1536wdefault-thq-spanbgblue500-elm3 {
-        background: #2b7fff !important;
-        border-radius: 6px !important;
-        padding: 3px 8px !important;
-      }
-      .frame1536wdefault-thq-text-elm102,
-      .frame1536wdefault-thq-text-elm107,
-      .frame1536wdefault-thq-text-elm112,
-      .frame1536wdefault-thq-text-elm117,
-      .frame1536wdefault-thq-text-elm118,
-      .frame1536wdefault-thq-text-elm131,
-      .frame1536wdefault-thq-text-elm132,
-      .frame1536wdefault-thq-text-elm137 {
-        font-family: 'Inter', sans-serif !important;
-        font-size: 11px !important;
-        font-weight: 700 !important;
-        color: #fff !important;
-        line-height: 1 !important;
-      }
-
-      /* Card info padding & layout */
-      .frame1536wdefault-thq-divp4-elm10,
-      .frame1536wdefault-thq-divp4-elm11,
-      .frame1536wdefault-thq-divp4-elm12,
-      .frame1536wdefault-thq-divp4-elm13,
-      .frame1536wdefault-thq-divp4-elm14,
-      .frame1536wdefault-thq-divp4-elm15,
-      .frame1536wdefault-thq-divp4-elm16,
-      .frame1536wdefault-thq-divp4-elm17,
-      .frame1536wdefault-thq-divp4-elm18,
-      .frame1536wdefault-thq-divp4-elm19 {
-        padding: 14px 16px 16px !important;
-        gap: 3px !important;
-        display: flex !important;
-        flex-direction: column !important;
-      }
-
-      /* Brand text */
-      .frame1536wdefault-thq-text-elm103,
-      .frame1536wdefault-thq-text-elm108,
-      .frame1536wdefault-thq-text-elm113,
-      .frame1536wdefault-thq-text-elm119,
-      .frame1536wdefault-thq-text-elm133,
-      .frame1536wdefault-thq-text-elm138,
-      .frame1536wdefault-thq-text-elm143,
-      .frame1536wdefault-thq-text-elm148,
-      .frame1536wdefault-thq-text-elm153,
-      .frame1536wdefault-thq-text-elm158 {
-        font-family: 'Inter', sans-serif !important;
-        font-size: 11px !important;
-        font-weight: 500 !important;
-        color: #697282 !important;
-        text-transform: uppercase !important;
-        letter-spacing: 0.5px !important;
-        line-height: 1.4 !important;
-      }
-
-      /* Product name */
-      .frame1536wdefault-thq-text-elm104,
-      .frame1536wdefault-thq-text-elm109,
-      .frame1536wdefault-thq-text-elm114,
-      .frame1536wdefault-thq-text-elm120,
-      .frame1536wdefault-thq-text-elm134,
-      .frame1536wdefault-thq-text-elm139,
-      .frame1536wdefault-thq-text-elm144,
-      .frame1536wdefault-thq-text-elm149,
-      .frame1536wdefault-thq-text-elm154,
-      .frame1536wdefault-thq-text-elm159 {
-        font-family: 'Inter', sans-serif !important;
-        font-size: 14px !important;
-        font-weight: 700 !important;
-        color: #0a0a0a !important;
-        line-height: 1.35 !important;
-        margin-top: 2px !important;
-      }
-
-      /* Category text */
-      .frame1536wdefault-thq-text-elm105,
-      .frame1536wdefault-thq-text-elm110,
-      .frame1536wdefault-thq-text-elm115,
-      .frame1536wdefault-thq-text-elm121,
-      .frame1536wdefault-thq-text-elm135,
-      .frame1536wdefault-thq-text-elm140,
-      .frame1536wdefault-thq-text-elm145,
-      .frame1536wdefault-thq-text-elm150,
-      .frame1536wdefault-thq-text-elm155,
-      .frame1536wdefault-thq-text-elm160 {
-        font-family: 'Inter', sans-serif !important;
-        font-size: 11px !important;
-        font-weight: 400 !important;
-        color: #697282 !important;
-        line-height: 1.4 !important;
-      }
-
-      /* Price */
-      .frame1536wdefault-thq-text-elm106,
-      .frame1536wdefault-thq-text-elm111,
-      .frame1536wdefault-thq-text-elm116,
-      .frame1536wdefault-thq-text-elm122,
-      .frame1536wdefault-thq-text-elm136,
-      .frame1536wdefault-thq-text-elm141,
-      .frame1536wdefault-thq-text-elm146,
-      .frame1536wdefault-thq-text-elm151,
-      .frame1536wdefault-thq-text-elm156,
-      .frame1536wdefault-thq-text-elm161 {
-        font-family: 'Inter', sans-serif !important;
-        font-size: 16px !important;
-        font-weight: 700 !important;
-        color: #0a0a0a !important;
-        margin-top: 6px !important;
-        line-height: 1.3 !important;
-      }
-
-      /* Badge overlay - thêm các elm còn thiếu */
-      .frame1536wdefault-thq-divabsolute-elm12,
-      .frame1536wdefault-thq-divabsolute-elm13,
-      .frame1536wdefault-thq-divabsolute-elm14,
-      .frame1536wdefault-thq-divabsolute-elm15,
-      .frame1536wdefault-thq-divabsolute-elm25,
-      .frame1536wdefault-thq-divabsolute-elm26,
-      .frame1536wdefault-thq-divabsolute-elm27,
-      .frame1536wdefault-thq-divabsolute-elm28,
-      .frame1536wdefault-thq-divabsolute-elm29,
-      .frame1536wdefault-thq-divabsolute-elm30 {
-        position: absolute !important;
-        top: 10px !important;
-        left: 10px !important;
-        z-index: 2 !important;
-      }
-
-      /* Badge blue thêm */
-      .frame1536wdefault-thq-spanbgblue500-elm4,
-      .frame1536wdefault-thq-spanbgblue500-elm5 {
-        background: #2b7fff !important;
-        border-radius: 6px !important;
-        padding: 3px 8px !important;
-      }
-      .frame1536wdefault-thq-text-elm142,
-      .frame1536wdefault-thq-text-elm147,
-      .frame1536wdefault-thq-text-elm152,
-      .frame1536wdefault-thq-text-elm157 {
-        font-family: 'Inter', sans-serif !important;
-        font-size: 11px !important;
-        font-weight: 700 !important;
-        color: #fff !important;
-        line-height: 1 !important;
-      }
-
-      /* Card hover - thêm elm14-18 */
-      .frame1536wdefault-thq-agroup-elm10,
-      .frame1536wdefault-thq-agroup-elm11,
-      .frame1536wdefault-thq-agroup-elm12,
-      .frame1536wdefault-thq-agroup-elm13,
-      .frame1536wdefault-thq-agroup-elm14,
-      .frame1536wdefault-thq-agroup-elm15,
-      .frame1536wdefault-thq-agroup-elm16,
-      .frame1536wdefault-thq-agroup-elm17,
-      .frame1536wdefault-thq-agroup-elm18 {
-        transition: box-shadow 0.25s, transform 0.25s !important;
-        border-radius: 12px !important;
-        overflow: hidden !important;
-      }
-      .frame1536wdefault-thq-agroup-elm10:hover,
-      .frame1536wdefault-thq-agroup-elm11:hover,
-      .frame1536wdefault-thq-agroup-elm12:hover,
-      .frame1536wdefault-thq-agroup-elm13:hover,
-      .frame1536wdefault-thq-agroup-elm14:hover,
-      .frame1536wdefault-thq-agroup-elm15:hover,
-      .frame1536wdefault-thq-agroup-elm16:hover,
-      .frame1536wdefault-thq-agroup-elm17:hover,
-      .frame1536wdefault-thq-agroup-elm18:hover {
-        box-shadow: 0 12px 32px rgba(0,0,0,0.18) !important;
-        transform: translateY(-4px) !important;
-      }
+      /* FOOTER */
+      .footer { background: #0a0a0a; padding: 56px 40px 32px; }
+      .footer-inner { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; }
+      @media(max-width: 767px) { .footer-inner { grid-template-columns: 1fr 1fr; } }
+      .footer-brand { font-size: 18px; font-weight: 800; color: #fff; letter-spacing: 3px; margin-bottom: 12px; }
+      .footer-desc { font-size: 13px; color: rgba(255,255,255,0.45); line-height: 1.7; max-width: 260px; }
+      .footer-col h4 { color: #fff; font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 16px; }
+      .footer-col a { display: block; color: rgba(255,255,255,0.45); font-size: 13px; margin-bottom: 10px; transition: color 0.2s; }
+      .footer-col a:hover { color: #fff; }
+      .footer-bottom { max-width: 1400px; margin: 40px auto 0; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+      .footer-bottom span { color: rgba(255,255,255,0.35); font-size: 12px; }
     </style>
   </head>
   <body>
-    <link rel="stylesheet" href="./style.css" />
-    <div>
-      <link href="./index.css" rel="stylesheet" />
 
-      <div class="frame1536wdefault-container1">
-        <div class="frame1536wdefault-thq-frame1536wdefault-elm">
-          <div class="frame1536wdefault-thq-divfigcoderoot-elm">
-            <div class="frame1536wdefault-thq-divminhscreen-elm1">
-              <div class="frame1536wdefault-thq-divminhscreen-elm2">
-                <div class="frame1536wdefault-thq-sectionrelative-elm">
-                  <img
-                    src="public/divabsolute415-t9wq-1600w.png"
-                    alt="divabsolute415"
-                    class="frame1536wdefault-thq-divabsolute-elm10"
-                  />
-                  <img
-                    src="public/divabsolute417-fo9i-1600w.png"
-                    alt="divabsolute417"
-                    class="frame1536wdefault-thq-divabsolute-elm11"
-                  />
-                  <div class="frame1536wdefault-thq-divrelative-elm10">
-                    <div class="frame1536wdefault-thq-divmaxw2xl-elm"></div>
-                  </div>
-                </div>
-                <div class="frame1536wdefault-thq-sectionpy16-elm1">
-                  <div class="frame1536wdefault-thq-divcontainer-elm1">
-                    <div class="frame1536wdefault-thq-divflex-elm10">
-                      <div class="frame1536wdefault-thq-divflex-elm11">
-                        <img
-                          src="public/frame464-9p2j.svg"
-                          alt="Frame464"
-                          class="frame1536wdefault-thq-frame-elm10"
-                        />
-                        <div class="frame1536wdefault-thq-h2text3xl-elm1">
-                          <span
-                            class="frame1536wdefault-thq-text-elm100 www.figma.comInterBold10"
-                          >
-                            Sản Phẩm Nổi Bật
-                          </span>
-                        </div>
-                      </div>
-                      <a
-                        href="./product.html"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        class="frame1536wdefault-link10"
-                      >
-                        <div class="frame1536wdefault-thq-atextsm-elm1">
-                          <span
-                            class="frame1536wdefault-thq-text-elm101 www.figma.comInterSemiBold3"
-                          >
-                            Xem Tất Cả
-                          </span>
-                          <img
-                            src="public/frame481-i08c.svg"
-                            alt="Frame481"
-                            class="frame1536wdefault-thq-frame-elm11"
-                          />
-                        </div>
-                      </a>
-                    </div>
-                    <div class="frame1536wdefault-thq-divgrid-elm1">
-                      <a
-                        href="./product.html"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        class="frame1536wdefault-link11"
-                      >
-                        <div class="frame1536wdefault-thq-agroup-elm10">
-                          <div class="frame1536wdefault-thq-divrelative-elm11">
-                            <div
-                              class="frame1536wdefault-thq-air-jordan1x-dior-high-elm"
-                            ></div>
-                            <div
-                              class="frame1536wdefault-thq-divabsolute-elm12"
-                            >
-                              <div
-                                class="frame1536wdefault-thq-spanbgred500-elm1"
-                              >
-                                <span
-                                  class="frame1536wdefault-thq-text-elm102 www.figma.comInterSemiBold"
-                                >
-                                  HOT
-                                </span>
-                              </div>
-                            </div>
-                            <button
-                              class="frame1536wdefault-thq-buttonabsolute-elm10"
-                            ></button>
-                          </div>
-                          <div class="frame1536wdefault-thq-divp4-elm10">
-                            <div class="frame1536wdefault-thq-ptextxs-elm10">
-                              <span
-                                class="frame1536wdefault-thq-text-elm103 www.figma.comInterRegular1"
-                              >
-                                Jordan x Dior
-                              </span>
-                            </div>
-                            <div
-                              class="frame1536wdefault-thq-h3fontsemibold-elm10"
-                            >
-                              <span
-                                class="frame1536wdefault-thq-text-elm104 www.figma.comInterSemiBold5"
-                              >
-                                Air Jordan 1 x Dior High
-                              </span>
-                            </div>
-                            <div class="frame1536wdefault-thq-ptextxs-elm11">
-                              <span
-                                class="frame1536wdefault-thq-text-elm105 www.figma.comInterRegular3"
-                              >
-                                Dior Collab
-                              </span>
-                            </div>
-                            <div class="frame1536wdefault-thq-ptextlg-elm10">
-                              <span
-                                class="frame1536wdefault-thq-text-elm106 www.figma.comInterBold"
-                              >
-                                85.000.000&nbsp;₫
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                      <a
-                        href="./product.html"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        class="frame1536wdefault-link12"
-                      >
-                        <div class="frame1536wdefault-thq-agroup-elm11">
-                          <div class="frame1536wdefault-thq-divrelative-elm12">
-                            <div
-                              class="frame1536wdefault-thq-air-jordan1x-travis-scott-elm"
-                            ></div>
-                            <div
-                              class="frame1536wdefault-thq-divabsolute-elm13"
-                            >
-                              <div
-                                class="frame1536wdefault-thq-spanbgred500-elm2"
-                              >
-                                <span
-                                  class="frame1536wdefault-thq-text-elm107 www.figma.comInterSemiBold"
-                                >
-                                  HOT
-                                </span>
-                              </div>
-                            </div>
-                            <button
-                              class="frame1536wdefault-thq-buttonabsolute-elm11"
-                            ></button>
-                          </div>
-                          <div class="frame1536wdefault-thq-divp4-elm11">
-                            <div class="frame1536wdefault-thq-ptextxs-elm12">
-                              <span
-                                class="frame1536wdefault-thq-text-elm108 www.figma.comInterRegular"
-                              >
-                                Jordan x Travis Scott
-                              </span>
-                            </div>
-                            <div
-                              class="frame1536wdefault-thq-h3fontsemibold-elm11"
-                            >
-                              <span
-                                class="frame1536wdefault-thq-text-elm109 www.figma.comInterSemiBold5"
-                              >
-                                Air Jordan 1 x Travis Scott
-                              </span>
-                            </div>
-                            <div class="frame1536wdefault-thq-ptextxs-elm13">
-                              <span
-                                class="frame1536wdefault-thq-text-elm110 www.figma.comInterRegular1"
-                              >
-                                Travis Scott Collab
-                              </span>
-                            </div>
-                            <div class="frame1536wdefault-thq-ptextlg-elm11">
-                              <span
-                                class="frame1536wdefault-thq-text-elm111 www.figma.comInterBold"
-                              >
-                                42.000.000&nbsp;₫
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                      <a
-                        href="./product.html"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        class="frame1536wdefault-link13"
-                      >
-                        <div class="frame1536wdefault-thq-agroup-elm12">
-                          <div class="frame1536wdefault-thq-divrelative-elm13">
-                            <div
-                              class="frame1536wdefault-thq-nikex-off-white-collection-elm"
-                            ></div>
-                            <div
-                              class="frame1536wdefault-thq-divabsolute-elm14"
-                            >
-                              <div
-                                class="frame1536wdefault-thq-spanbgred500-elm3"
-                              >
-                                <span
-                                  class="frame1536wdefault-thq-text-elm112 www.figma.comInterSemiBold"
-                                >
-                                  HOT
-                                </span>
-                              </div>
-                            </div>
-                            <button
-                              class="frame1536wdefault-thq-buttonabsolute-elm12"
-                            ></button>
-                          </div>
-                          <div class="frame1536wdefault-thq-divp4-elm12">
-                            <div class="frame1536wdefault-thq-ptextxs-elm14">
-                              <span
-                                class="frame1536wdefault-thq-text-elm113 www.figma.comInterRegular"
-                              >
-                                Nike x Off-White
-                              </span>
-                            </div>
-                            <div
-                              class="frame1536wdefault-thq-h3fontsemibold-elm12"
-                            >
-                              <span
-                                class="frame1536wdefault-thq-text-elm114 www.figma.comInterSemiBold2"
-                              >
-                                Nike x Off-White Collection
-                              </span>
-                            </div>
-                            <div class="frame1536wdefault-thq-ptextxs-elm15">
-                              <span
-                                class="frame1536wdefault-thq-text-elm115 www.figma.comInterRegular"
-                              >
-                                Off-White Collab
-                              </span>
-                            </div>
-                            <div class="frame1536wdefault-thq-ptextlg-elm12">
-                              <span
-                                class="frame1536wdefault-thq-text-elm116 www.figma.comInterBold"
-                              >
-                                38.000.000&nbsp;₫
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                      <a
-                        href="./product.html"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        class="frame1536wdefault-link14"
-                      >
-                        <div class="frame1536wdefault-thq-agroup-elm13">
-                          <div class="frame1536wdefault-thq-divrelative-elm14">
-                            <div
-                              class="frame1536wdefault-thq-air-jordan1-retro-high-elm1"
-                            ></div>
-                            <div
-                              class="frame1536wdefault-thq-divabsolute-elm15"
-                            >
-                              <div
-                                class="frame1536wdefault-thq-spanbgred500-elm4"
-                              >
-                                <span
-                                  class="frame1536wdefault-thq-text-elm117 www.figma.comInterSemiBold"
-                                >
-                                  HOT
-                                </span>
-                              </div>
-                              <div
-                                class="frame1536wdefault-thq-spanbgblue500-elm1"
-                              >
-                                <span
-                                  class="frame1536wdefault-thq-text-elm118 www.figma.comInterSemiBold1"
-                                >
-                                  BÁN CHẠY
-                                </span>
-                              </div>
-                            </div>
-                            <button
-                              class="frame1536wdefault-thq-buttonabsolute-elm13"
-                            ></button>
-                          </div>
-                          <div class="frame1536wdefault-thq-divp4-elm13">
-                            <div class="frame1536wdefault-thq-ptextxs-elm16">
-                              <span
-                                class="frame1536wdefault-thq-text-elm119 www.figma.comInterRegular3"
-                              >
-                                Nike
-                              </span>
-                            </div>
-                            <div
-                              class="frame1536wdefault-thq-h3fontsemibold-elm13"
-                            >
-                              <span
-                                class="frame1536wdefault-thq-text-elm120 www.figma.comInterSemiBold5"
-                              >
-                                Air Jordan 1 Retro High
-                              </span>
-                            </div>
-                            <div class="frame1536wdefault-thq-ptextxs-elm17">
-                              <span
-                                class="frame1536wdefault-thq-text-elm121 www.figma.comInterRegular3"
-                              >
-                                Basketball
-                              </span>
-                            </div>
-                            <div class="frame1536wdefault-thq-ptextlg-elm13">
-                              <span
-                                class="frame1536wdefault-thq-text-elm122 www.figma.comInterBold"
-                              >
-                                4.200.000&nbsp;₫
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="frame1536wdefault-thq-sectionpy16-elm2">
-                  <div class="frame1536wdefault-thq-divgrid-elm2">
-                    <a
-                      href="./product.html"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      class="frame1536wdefault-link15"
-                    >
-                      <div class="frame1536wdefault-thq-arelative-elm1">
-                        <img
-                          src="public/divabsolute4196-4n2w-400h.png"
-                          alt="divabsolute4196"
-                          class="frame1536wdefault-thq-divabsolute-elm16"
-                        />
-                        <img
-                          src="public/divabsolute4197-izh-400h.png"
-                          alt="divabsolute4197"
-                          class="frame1536wdefault-thq-divabsolute-elm17"
-                        />
-                        <div class="frame1536wdefault-thq-divabsolute-elm18">
-                          <div class="frame1536wdefault-thq-h3text3xl-elm1">
-                            <span
-                              class="frame1536wdefault-thq-text-elm123 www.figma.comInterBold6"
-                            >
-                              GIÀY NAM
-                            </span>
-                          </div>
-                          <div class="frame1536wdefault-thq-pflex-elm1">
-                            <span
-                              class="frame1536wdefault-thq-text-elm124 www.figma.comInterSemiBold7"
-                            >
-                              Khám Phá Ngay
-                            </span>
-                            <img
-                              src="public/frame4205-zlnc.svg"
-                              alt="Frame4205"
-                              class="frame1536wdefault-thq-frame-elm12"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                    <a
-                      href="./product.html"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      class="frame1536wdefault-link16"
-                    >
-                      <div class="frame1536wdefault-thq-arelative-elm2">
-                        <img
-                          src="public/divabsolute4210-uw9-400h.png"
-                          alt="divabsolute4210"
-                          class="frame1536wdefault-thq-divabsolute-elm19"
-                        />
-                        <img
-                          src="public/divabsolute4211-hcif-400h.png"
-                          alt="divabsolute4211"
-                          class="frame1536wdefault-thq-divabsolute-elm20"
-                        />
-                        <div class="frame1536wdefault-thq-divabsolute-elm21">
-                          <div class="frame1536wdefault-thq-h3text3xl-elm2">
-                            <span
-                              class="frame1536wdefault-thq-text-elm125 www.figma.comInterBold9"
-                            >
-                              GIÀY NỮ
-                            </span>
-                          </div>
-                          <div class="frame1536wdefault-thq-pflex-elm2">
-                            <span
-                              class="frame1536wdefault-thq-text-elm126 www.figma.comInterSemiBold7"
-                            >
-                              Khám Phá Ngay
-                            </span>
-                            <img
-                              src="public/frame4219-x5uj.svg"
-                              alt="Frame4219"
-                              class="frame1536wdefault-thq-frame-elm13"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                    <a
-                      href="./product.html"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      class="frame1536wdefault-link17"
-                    >
-                      <div class="frame1536wdefault-thq-arelative-elm3">
-                        <img
-                          src="public/divabsolute4224-kh5j-400h.png"
-                          alt="divabsolute4224"
-                          class="frame1536wdefault-thq-divabsolute-elm22"
-                        />
-                        <img
-                          src="public/divabsolute4225-2gem-400h.png"
-                          alt="divabsolute4225"
-                          class="frame1536wdefault-thq-divabsolute-elm23"
-                        />
-                        <div class="frame1536wdefault-thq-divabsolute-elm24">
-                          <div class="frame1536wdefault-thq-h3text3xl-elm3">
-                            <span
-                              class="frame1536wdefault-thq-text-elm127 www.figma.comInterBold10"
-                            >
-                              PHỤ KIỆN
-                            </span>
-                          </div>
-                          <div class="frame1536wdefault-thq-pflex-elm3">
-                            <span
-                              class="frame1536wdefault-thq-text-elm128 www.figma.comInterSemiBold7"
-                            >
-                              Khám Phá Ngay
-                            </span>
-                            <img
-                              src="public/frame4231-2zbq.svg"
-                              alt="Frame4231"
-                              class="frame1536wdefault-thq-frame-elm14"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="frame1536wdefault-thq-sectionpy16-elm3">
-                  <div class="frame1536wdefault-thq-divcontainer-elm2">
-                    <div class="frame1536wdefault-thq-divflex-elm12">
-                      <div class="frame1536wdefault-thq-divflex-elm13">
-                        <img
-                          src="public/frame4240-wd.svg"
-                          alt="Frame4240"
-                          class="frame1536wdefault-thq-frame-elm15"
-                        />
-                        <div class="frame1536wdefault-thq-h2text3xl-elm2">
-                          <span
-                            class="frame1536wdefault-thq-text-elm129 www.figma.comInterBold7"
-                          >
-                            Bán Chạy Nhất
-                          </span>
-                        </div>
-                      </div>
-                      <a
-                        href="./product.html"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        class="frame1536wdefault-link18"
-                      >
-                        <div class="frame1536wdefault-thq-atextsm-elm2">
-                          <span
-                            class="frame1536wdefault-thq-text-elm130 www.figma.comInterSemiBold3"
-                          >
-                            Xem Tất Cả
-                          </span>
-                          <img
-                            src="public/frame4248-mruh.svg"
-                            alt="Frame4248"
-                            class="frame1536wdefault-thq-frame-elm16"
-                          />
-                        </div>
-                      </a>
-                    </div>
-                    <div class="frame1536wdefault-thq-divgrid-elm3">
-                      <a
-                        href="./product.html"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        class="frame1536wdefault-link19"
-                      >
-                        <div class="frame1536wdefault-thq-agroup-elm14">
-                          <div class="frame1536wdefault-thq-divrelative-elm15">
-                            <div
-                              class="frame1536wdefault-thq-air-jordan1-retro-high-elm2"
-                            ></div>
-                            <div
-                              class="frame1536wdefault-thq-divabsolute-elm25"
-                            >
-                              <div
-                                class="frame1536wdefault-thq-spanbgred500-elm5"
-                              >
-                                <span
-                                  class="frame1536wdefault-thq-text-elm131 www.figma.comInterSemiBold"
-                                >
-                                  HOT
-                                </span>
-                              </div>
-                              <div
-                                class="frame1536wdefault-thq-spanbgblue500-elm2"
-                              >
-                                <span
-                                  class="frame1536wdefault-thq-text-elm132 www.figma.comInterSemiBold1"
-                                >
-                                  BÁN CHẠY
-                                </span>
-                              </div>
-                            </div>
-                            <button
-                              class="frame1536wdefault-thq-buttonabsolute-elm14"
-                            ></button>
-                          </div>
-                          <div class="frame1536wdefault-thq-divp4-elm14">
-                            <div class="frame1536wdefault-thq-ptextxs-elm18">
-                              <span
-                                class="frame1536wdefault-thq-text-elm133 www.figma.comInterRegular3"
-                              >
-                                Nike
-                              </span>
-                            </div>
-                            <div
-                              class="frame1536wdefault-thq-h3fontsemibold-elm14"
-                            >
-                              <span
-                                class="frame1536wdefault-thq-text-elm134 www.figma.comInterSemiBold5"
-                              >
-                                Air Jordan 1 Retro High
-                              </span>
-                            </div>
-                            <div class="frame1536wdefault-thq-ptextxs-elm19">
-                              <span
-                                class="frame1536wdefault-thq-text-elm135 www.figma.comInterRegular3"
-                              >
-                                Basketball
-                              </span>
-                            </div>
-                            <div class="frame1536wdefault-thq-ptextlg-elm14">
-                              <span
-                                class="frame1536wdefault-thq-text-elm136 www.figma.comInterBold"
-                              >
-                                4.200.000&nbsp;₫
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                      <a
-                        href="./product.html"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        class="frame1536wdefault-link20"
-                      >
-                        <div class="frame1536wdefault-thq-agroup-elm15">
-                          <div class="frame1536wdefault-thq-divrelative-elm16">
-                            <div
-                              class="frame1536wdefault-thq-air-force1-low-white-elm"
-                            ></div>
-                            <div
-                              class="frame1536wdefault-thq-divabsolute-elm26"
-                            >
-                              <div
-                                class="frame1536wdefault-thq-spanbgblue500-elm3"
-                              >
-                                <span
-                                  class="frame1536wdefault-thq-text-elm137 www.figma.comInterSemiBold1"
-                                >
-                                  BÁN CHẠY
-                                </span>
-                              </div>
-                            </div>
-                            <button
-                              class="frame1536wdefault-thq-buttonabsolute-elm15"
-                            ></button>
-                          </div>
-                          <div class="frame1536wdefault-thq-divp4-elm15">
-                            <div class="frame1536wdefault-thq-ptextxs-elm20">
-                              <span
-                                class="frame1536wdefault-thq-text-elm138 www.figma.comInterRegular3"
-                              >
-                                Nike
-                              </span>
-                            </div>
-                            <div
-                              class="frame1536wdefault-thq-h3fontsemibold-elm15"
-                            >
-                              <span
-                                class="frame1536wdefault-thq-text-elm139 www.figma.comInterSemiBold5"
-                              >
-                                Air Force 1 Low White
-                              </span>
-                            </div>
-                            <div class="frame1536wdefault-thq-ptextxs-elm21">
-                              <span
-                                class="frame1536wdefault-thq-text-elm140 www.figma.comInterRegular"
-                              >
-                                Lifestyle
-                              </span>
-                            </div>
-                            <div class="frame1536wdefault-thq-ptextlg-elm15">
-                              <span
-                                class="frame1536wdefault-thq-text-elm141 www.figma.comInterBold"
-                              >
-                                2.800.000&nbsp;₫
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                      <a
-                        href="./product.html"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        class="frame1536wdefault-link21"
-                      >
-                        <div class="frame1536wdefault-thq-agroup-elm16">
-                          <div class="frame1536wdefault-thq-divrelative-elm17">
-                            <div
-                              class="frame1536wdefault-thq-new-balance550-white-green-elm"
-                            ></div>
-                            <div
-                              class="frame1536wdefault-thq-divabsolute-elm27"
-                            >
-                              <div
-                                class="frame1536wdefault-thq-spanbgblue500-elm4"
-                              >
-                                <span
-                                  class="frame1536wdefault-thq-text-elm142 www.figma.comInterSemiBold1"
-                                >
-                                  BÁN CHẠY
-                                </span>
-                              </div>
-                            </div>
-                            <button
-                              class="frame1536wdefault-thq-buttonabsolute-elm16"
-                            ></button>
-                          </div>
-                          <div class="frame1536wdefault-thq-divp4-elm16">
-                            <div class="frame1536wdefault-thq-ptextxs-elm22">
-                              <span
-                                class="frame1536wdefault-thq-text-elm143 www.figma.comInterRegular3"
-                              >
-                                New Balance
-                              </span>
-                            </div>
-                            <div
-                              class="frame1536wdefault-thq-h3fontsemibold-elm16"
-                            >
-                              <span
-                                class="frame1536wdefault-thq-text-elm144 www.figma.comInterSemiBold2"
-                              >
-                                New Balance 550 White Green
-                              </span>
-                            </div>
-                            <div class="frame1536wdefault-thq-ptextxs-elm23">
-                              <span
-                                class="frame1536wdefault-thq-text-elm145 www.figma.comInterRegular"
-                              >
-                                Lifestyle
-                              </span>
-                            </div>
-                            <div class="frame1536wdefault-thq-ptextlg-elm16">
-                              <span
-                                class="frame1536wdefault-thq-text-elm146 www.figma.comInterBold"
-                              >
-                                2.900.000&nbsp;₫
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                      <a
-                        href="./product.html"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        class="frame1536wdefault-link22"
-                      >
-                        <div class="frame1536wdefault-thq-agroup-elm17">
-                          <div class="frame1536wdefault-thq-divrelative-elm18">
-                            <div
-                              class="frame1536wdefault-thq-converse-chuck-taylor-all-star-high-elm"
-                            ></div>
-                            <div
-                              class="frame1536wdefault-thq-divabsolute-elm28"
-                            >
-                              <div
-                                class="frame1536wdefault-thq-spanbgblue500-elm5"
-                              >
-                                <span
-                                  class="frame1536wdefault-thq-text-elm147 www.figma.comInterSemiBold1"
-                                >
-                                  BÁN CHẠY
-                                </span>
-                              </div>
-                            </div>
-                            <button
-                              class="frame1536wdefault-thq-buttonabsolute-elm17"
-                            ></button>
-                          </div>
-                          <div class="frame1536wdefault-thq-divp4-elm17">
-                            <div class="frame1536wdefault-thq-ptextxs-elm24">
-                              <span
-                                class="frame1536wdefault-thq-text-elm148 www.figma.comInterRegular3"
-                              >
-                                Converse
-                              </span>
-                            </div>
-                            <div
-                              class="frame1536wdefault-thq-h3fontsemibold-elm17"
-                            >
-                              <span
-                                class="frame1536wdefault-thq-text-elm149 www.figma.comInterSemiBold4"
-                              >
-                                Converse Chuck Taylor All Star High
-                              </span>
-                            </div>
-                            <div class="frame1536wdefault-thq-ptextxs-elm25">
-                              <span
-                                class="frame1536wdefault-thq-text-elm150 www.figma.comInterRegular4"
-                              >
-                                Casual
-                              </span>
-                            </div>
-                            <div class="frame1536wdefault-thq-ptextlg-elm17">
-                              <span
-                                class="frame1536wdefault-thq-text-elm151 www.figma.comInterBold2"
-                              >
-                                1.800.000&nbsp;₫
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="frame1536wdefault-thq-sectionpy16-elm4">
-                  <div class="frame1536wdefault-thq-divcontainer-elm3">
-                    <div class="frame1536wdefault-thq-divflex-elm14">
-                      <div class="frame1536wdefault-thq-divflex-elm15">
-                        <img
-                          src="public/frame4348-u8d8.svg"
-                          alt="Frame4348"
-                          class="frame1536wdefault-thq-frame-elm17"
-                        />
-                        <div class="frame1536wdefault-thq-h2text3xl-elm3">
-                          <span
-                            class="frame1536wdefault-thq-text-elm152 www.figma.comInterBold8"
-                          >
-                            Hàng Mới Về
-                          </span>
-                        </div>
-                      </div>
-                      <a
-                        href="./product.html"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        class="frame1536wdefault-link23"
-                      >
-                        <div class="frame1536wdefault-thq-atextsm-elm3">
-                          <span
-                            class="frame1536wdefault-thq-text-elm153 www.figma.comInterSemiBold3"
-                          >
-                            Xem Tất Cả
-                          </span>
-                          <img
-                            src="public/frame4361-alga.svg"
-                            alt="Frame4361"
-                            class="frame1536wdefault-thq-frame-elm18"
-                          />
-                        </div>
-                      </a>
-                    </div>
-                    <div class="frame1536wdefault-thq-divgrid-elm4">
-                      <a
-                        href="./product.html"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        class="frame1536wdefault-link24"
-                      >
-                        <div class="frame1536wdefault-thq-agroup-elm18">
-                          <div class="frame1536wdefault-thq-divrelative-elm19">
-                            <div
-                              class="frame1536wdefault-thq-nike-dunk-low-retro-elm"
-                            ></div>
-                            <div
-                              class="frame1536wdefault-thq-divabsolute-elm29"
-                            >
-                              <div
-                                class="frame1536wdefault-thq-spanbggreen500-elm1"
-                              >
-                                <span
-                                  class="frame1536wdefault-thq-text-elm154 www.figma.comInterSemiBold1"
-                                >
-                                  MỚI
-                                </span>
-                              </div>
-                            </div>
-                            <button
-                              class="frame1536wdefault-thq-buttonabsolute-elm18"
-                            ></button>
-                          </div>
-                          <div class="frame1536wdefault-thq-divp4-elm18">
-                            <div class="frame1536wdefault-thq-ptextxs-elm26">
-                              <span
-                                class="frame1536wdefault-thq-text-elm155 www.figma.comInterRegular3"
-                              >
-                                Nike
-                              </span>
-                            </div>
-                            <div
-                              class="frame1536wdefault-thq-h3fontsemibold-elm18"
-                            >
-                              <span
-                                class="frame1536wdefault-thq-text-elm156 www.figma.comInterSemiBold5"
-                              >
-                                Nike Dunk Low Retro
-                              </span>
-                            </div>
-                            <div class="frame1536wdefault-thq-ptextxs-elm27">
-                              <span
-                                class="frame1536wdefault-thq-text-elm157 www.figma.comInterRegular"
-                              >
-                                Skateboarding
-                              </span>
-                            </div>
-                            <div class="frame1536wdefault-thq-ptextlg-elm18">
-                              <span
-                                class="frame1536wdefault-thq-text-elm158 www.figma.comInterBold"
-                              >
-                                3.200.000&nbsp;₫
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                      <a
-                        href="./product.html"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        class="frame1536wdefault-link25"
-                      >
-                        <div class="frame1536wdefault-thq-agroup-elm19">
-                          <div class="frame1536wdefault-thq-divrelative-elm20">
-                            <div
-                              class="frame1536wdefault-thq-puma-rsx-colorway-elm"
-                            ></div>
-                            <div
-                              class="frame1536wdefault-thq-divabsolute-elm30"
-                            >
-                              <div
-                                class="frame1536wdefault-thq-spanbggreen500-elm2"
-                              >
-                                <span
-                                  class="frame1536wdefault-thq-text-elm159 www.figma.comInterSemiBold1"
-                                >
-                                  MỚI
-                                </span>
-                              </div>
-                            </div>
-                            <button
-                              class="frame1536wdefault-thq-buttonabsolute-elm19"
-                            ></button>
-                          </div>
-                          <div class="frame1536wdefault-thq-divp4-elm19">
-                            <div class="frame1536wdefault-thq-ptextxs-elm28">
-                              <span
-                                class="frame1536wdefault-thq-text-elm160 www.figma.comInterRegular14"
-                              >
-                                Puma
-                              </span>
-                            </div>
-                            <div
-                              class="frame1536wdefault-thq-h3fontsemibold-elm19"
-                            >
-                              <span
-                                class="frame1536wdefault-thq-text-elm161 www.figma.comInterSemiBold4"
-                              >
-                                Puma RS-X Colorway
-                              </span>
-                            </div>
-                            <div class="frame1536wdefault-thq-ptextxs-elm29">
-                              <span
-                                class="frame1536wdefault-thq-text-elm162 www.figma.comInterRegular4"
-                              >
-                                Running
-                              </span>
-                            </div>
-                            <div class="frame1536wdefault-thq-ptextlg-elm19">
-                              <span
-                                class="frame1536wdefault-thq-text-elm163 www.figma.comInterBold1"
-                              >
-                                2.700.000&nbsp;₫
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                      <a
-                        href="./product.html"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        class="frame1536wdefault-link26"
-                      >
-                        <div class="frame1536wdefault-thq-agroup-elm20">
-                          <div class="frame1536wdefault-thq-divrelative-elm21">
-                            <div
-                              class="frame1536wdefault-thq-nike-react-infinity-run-elm"
-                            ></div>
-                            <div
-                              class="frame1536wdefault-thq-divabsolute-elm31"
-                            >
-                              <div
-                                class="frame1536wdefault-thq-spanbggreen500-elm3"
-                              >
-                                <span
-                                  class="frame1536wdefault-thq-text-elm164 www.figma.comInterSemiBold"
-                                >
-                                  MỚI
-                                </span>
-                              </div>
-                            </div>
-                            <button
-                              class="frame1536wdefault-thq-buttonabsolute-elm20"
-                            ></button>
-                          </div>
-                          <div class="frame1536wdefault-thq-divp4-elm20">
-                            <div class="frame1536wdefault-thq-ptextxs-elm30">
-                              <span
-                                class="frame1536wdefault-thq-text-elm165 www.figma.comInterRegular3"
-                              >
-                                Nike
-                              </span>
-                            </div>
-                            <div
-                              class="frame1536wdefault-thq-h3fontsemibold-elm20"
-                            >
-                              <span
-                                class="frame1536wdefault-thq-text-elm166 www.figma.comInterSemiBold5"
-                              >
-                                Nike React Infinity Run
-                              </span>
-                            </div>
-                            <div class="frame1536wdefault-thq-ptextxs-elm31">
-                              <span
-                                class="frame1536wdefault-thq-text-elm167 www.figma.comInterRegular4"
-                              >
-                                Running
-                              </span>
-                            </div>
-                            <div class="frame1536wdefault-thq-ptextlg-elm20">
-                              <span
-                                class="frame1536wdefault-thq-text-elm168 www.figma.comInterBold"
-                              >
-                                3.900.000&nbsp;₫
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                      <a
-                        href="./product.html"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        class="frame1536wdefault-link27"
-                      >
-                        <div class="frame1536wdefault-thq-agroup-elm21">
-                          <div class="frame1536wdefault-thq-divrelative-elm22">
-                            <div
-                              class="frame1536wdefault-thq-dunk-low-pink-women-elm"
-                            ></div>
-                            <div
-                              class="frame1536wdefault-thq-divabsolute-elm32"
-                            >
-                              <div
-                                class="frame1536wdefault-thq-spanbggreen500-elm4"
-                              >
-                                <span
-                                  class="frame1536wdefault-thq-text-elm169 www.figma.comInterSemiBold1"
-                                >
-                                  MỚI
-                                </span>
-                              </div>
-                            </div>
-                            <button
-                              class="frame1536wdefault-thq-buttonabsolute-elm21"
-                            ></button>
-                          </div>
-                          <div class="frame1536wdefault-thq-divp4-elm21">
-                            <div class="frame1536wdefault-thq-ptextxs-elm32">
-                              <span
-                                class="frame1536wdefault-thq-text-elm170 www.figma.comInterRegular3"
-                              >
-                                Nike
-                              </span>
-                            </div>
-                            <div
-                              class="frame1536wdefault-thq-h3fontsemibold-elm21"
-                            >
-                              <span
-                                class="frame1536wdefault-thq-text-elm171 www.figma.comInterSemiBold4"
-                              >
-                                Dunk Low Pink - Women
-                              </span>
-                            </div>
-                            <div class="frame1536wdefault-thq-ptextxs-elm33">
-                              <span
-                                class="frame1536wdefault-thq-text-elm172 www.figma.comInterRegular4"
-                              >
-                                Casual
-                              </span>
-                            </div>
-                            <div class="frame1536wdefault-thq-ptextlg-elm21">
-                              <span
-                                class="frame1536wdefault-thq-text-elm173 www.figma.comInterBold"
-                              >
-                                3.000.000&nbsp;₫
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                      <a
-                        href="./product.html"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        class="frame1536wdefault-link28"
-                      >
-                        <div class="frame1536wdefault-thq-agroup-elm22">
-                          <div class="frame1536wdefault-thq-divrelative-elm23">
-                            <div
-                              class="frame1536wdefault-thq-designer-sunglasses-collection-elm"
-                            ></div>
-                            <div
-                              class="frame1536wdefault-thq-divabsolute-elm33"
-                            >
-                              <div
-                                class="frame1536wdefault-thq-spanbggreen500-elm5"
-                              >
-                                <span
-                                  class="frame1536wdefault-thq-text-elm174 www.figma.comInterSemiBold1"
-                                >
-                                  MỚI
-                                </span>
-                              </div>
-                            </div>
-                            <button
-                              class="frame1536wdefault-thq-buttonabsolute-elm22"
-                            ></button>
-                          </div>
-                          <div class="frame1536wdefault-thq-divp4-elm22">
-                            <div class="frame1536wdefault-thq-ptextxs-elm34">
-                              <span
-                                class="frame1536wdefault-thq-text-elm175 www.figma.comInterRegular3"
-                              >
-                                Designer
-                              </span>
-                            </div>
-                            <div
-                              class="frame1536wdefault-thq-h3fontsemibold-elm22"
-                            >
-                              <span
-                                class="frame1536wdefault-thq-text-elm176 www.figma.comInterSemiBold4"
-                              >
-                                Designer Sunglasses Collection
-                              </span>
-                            </div>
-                            <div class="frame1536wdefault-thq-ptextxs-elm35">
-                              <span
-                                class="frame1536wdefault-thq-text-elm177 www.figma.comInterRegular14"
-                              >
-                                Kính
-                              </span>
-                            </div>
-                            <div class="frame1536wdefault-thq-ptextlg-elm22">
-                              <span
-                                class="frame1536wdefault-thq-text-elm178 www.figma.comInterBold"
-                              >
-                                4.200.000&nbsp;₫
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="frame1536wdefault-thq-sectionpy16-elm5">
-                  <div class="frame1536wdefault-thq-divcontainer-elm4">
-                    <div class="frame1536wdefault-thq-h2text3xl-elm4">
-                      <span
-                        class="frame1536wdefault-thq-text-elm179 www.figma.comInterBold9"
-                      >
-                        Đăng Ký Nhận Tin Mới Nhất
-                      </span>
-                    </div>
-                    <div class="frame1536wdefault-thq-ptextgray300-elm">
-                      <span
-                        class="frame1536wdefault-thq-text-elm180 www.figma.comInterRegular15"
-                      >
-                        Nhận thông tin về sản phẩm mới, ưu đãi đặc biệt và tin
-                        tức từ Sneaker Stor
-                      </span>
-                    </div>
-                    <div class="frame1536wdefault-thq-divflex-elm16">
-                      <div class="frame1536wdefault-thq-inputflex1-elm">
-                        <div class="frame1536wdefault-thq-divplaceholder-elm">
-                          <span
-                            class="frame1536wdefault-thq-text-elm181 www.figma.comInterRegular13"
-                          >
-                            Nhập email của bạn
-                          </span>
-                        </div>
-                      </div>
-                      <button class="frame1536wdefault-thq-buttonbgwhite-elm">
-                        <span
-                          class="frame1536wdefault-thq-text-elm182 www.figma.comInterSemiBold7"
-                        >
-                          Đăng Ký
-                        </span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="frame1536wdefault-thq-footerbggray100-elm">
-                <div class="frame1536wdefault-thq-divcontainer-elm5">
-                  <div class="frame1536wdefault-thq-divgrid-elm5">
-                    <div class="frame1536wdefault-thq-div-elm1">
-                      <div class="frame1536wdefault-thq-h3fontbold-elm1">
-                        <span
-                          class="frame1536wdefault-thq-text-elm183 www.figma.comInterBold3"
-                        >
-                          VỀ CHÚNG TÔI
-                        </span>
-                      </div>
-                      <div class="frame1536wdefault-thq-ptextsm-elm1">
-                        <span
-                          class="frame1536wdefault-thq-text-elm184 www.figma.comInterRegular7"
-                        >
-                          <span>
-                            Sneaker Store - Điểm đến hàng đầu cho những tín đồ
-                          </span>
-                          <br />
-                          <span>
-                            giày sneaker tại Việt Nam. Chúng tôi mang đến những
-                          </span>
-                          <br />
-                          <span>sản phẩm chính hãng với giá tốt nhất.</span>
-                        </span>
-                      </div>
-                      <div class="frame1536wdefault-thq-divflex-elm17">
-                        <div class="frame1536wdefault-thq-ap2margin-elm">
-                          <a
-                            href="https://facebook.com/"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            class="frame1536wdefault-link29"
-                          >
-                            <div class="frame1536wdefault-thq-ap2-elm1">
-                              <img
-                                src="public/frame4511-jtv.svg"
-                                alt="Frame4511"
-                                class="frame1536wdefault-thq-frame-elm19"
-                              />
-                            </div>
-                          </a>
-                        </div>
-                        <a
-                          href="https://instagram.com/"
-                          target="_blank"
-                          rel="noreferrer noopener"
-                          class="frame1536wdefault-link30"
-                        >
-                          <div class="frame1536wdefault-thq-ap2-elm2">
-                            <img
-                              src="public/frame4515-kmd.svg"
-                              alt="Frame4515"
-                              class="frame1536wdefault-thq-frame-elm20"
-                            />
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="frame1536wdefault-thq-div-elm2">
-                      <div class="frame1536wdefault-thq-h3fontbold-elm2">
-                        <span
-                          class="frame1536wdefault-thq-text-elm188 www.figma.comInterBold4"
-                        >
-                          LIÊN KẾT NHANH
-                        </span>
-                      </div>
-                      <div class="frame1536wdefault-thq-ulspacey2-elm1">
-                        <div class="frame1536wdefault-thq-li-elm1">
-                          <span
-                            class="frame1536wdefault-thq-text-elm189 www.figma.comInterRegular9"
-                          >
-                            Giày Nam
-                          </span>
-                        </div>
-                        <div class="frame1536wdefault-thq-li-elm2">
-                          <span
-                            class="frame1536wdefault-thq-text-elm190 www.figma.comInterRegular11"
-                          >
-                            Giày Nữ
-                          </span>
-                        </div>
-                        <div class="frame1536wdefault-thq-li-elm3">
-                          <span
-                            class="frame1536wdefault-thq-text-elm191 www.figma.comInterRegular6"
-                          >
-                            Limited Edition
-                          </span>
-                        </div>
-                        <div class="frame1536wdefault-thq-li-elm4">
-                          <span
-                            class="frame1536wdefault-thq-text-elm192 www.figma.comInterRegular9"
-                          >
-                            Phụ Kiện
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="frame1536wdefault-thq-div-elm3">
-                      <div class="frame1536wdefault-thq-h3fontbold-elm3">
-                        <span
-                          class="frame1536wdefault-thq-text-elm193 www.figma.comInterBold4"
-                        >
-                          HỖ TRỢ KHÁCH HÀNG
-                        </span>
-                      </div>
-                      <div class="frame1536wdefault-thq-ulspacey2-elm2">
-                        <div class="frame1536wdefault-thq-li-elm5">
-                          <span
-                            class="frame1536wdefault-thq-text-elm194 www.figma.comInterRegular9"
-                          >
-                            Về Chúng Tôi
-                          </span>
-                        </div>
-                        <div class="frame1536wdefault-thq-li-elm6">
-                          <span
-                            class="frame1536wdefault-thq-text-elm195 www.figma.comInterRegular8"
-                          >
-                            Liên Hệ
-                          </span>
-                        </div>
-                        <div class="frame1536wdefault-thq-li-elm7">
-                          <span
-                            class="frame1536wdefault-thq-text-elm196 www.figma.comInterRegular8"
-                          >
-                            Chính Sách Đổi Trả
-                          </span>
-                        </div>
-                        <div class="frame1536wdefault-thq-li-elm8">
-                          <span
-                            class="frame1536wdefault-thq-text-elm197 www.figma.comInterRegular10"
-                          >
-                            Hướng Dẫn Mua Hàng
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="frame1536wdefault-thq-div-elm4">
-                      <div class="frame1536wdefault-thq-h3fontbold-elm4">
-                        <span
-                          class="frame1536wdefault-thq-text-elm198 www.figma.comInterBold4"
-                        >
-                          LIÊN HỆ
-                        </span>
-                      </div>
-                      <div class="frame1536wdefault-thq-ulspacey3-elm">
-                        <div class="frame1536wdefault-thq-liflex-elm1">
-                          <img
-                            src="public/svglucidemargin4556-4xx.svg"
-                            alt="svglucidemargin4556"
-                            class="frame1536wdefault-thq-svglucidemargin-elm1"
-                          />
-                          <div
-                            class="frame1536wdefault-thq-spantextgray600-elm"
-                          >
-                            <span
-                              class="frame1536wdefault-thq-text-elm199 www.figma.comInterRegular8"
-                            >
-                              476 Mã Lò, P. Tân Tạo, TP.HCM
-                            </span>
-                          </div>
-                        </div>
-                        <div class="frame1536wdefault-thq-liflex-elm2">
-                          <img
-                            src="public/svglucidemargin4563-gfdh.svg"
-                            alt="svglucidemargin4563"
-                            class="frame1536wdefault-thq-svglucidemargin-elm2"
-                          />
-                          <div class="frame1536wdefault-thq-atextgray600-elm1">
-                            <span
-                              class="frame1536wdefault-thq-text-elm200 www.figma.comInterRegular5"
-                            >
-                              077 2374 8272
-                            </span>
-                          </div>
-                        </div>
-                        <div class="frame1536wdefault-thq-liflex-elm3">
-                          <img
-                            src="public/svglucidemargin4571-5q3h.svg"
-                            alt="svglucidemargin4571"
-                            class="frame1536wdefault-thq-svglucidemargin-elm3"
-                          />
-                          <div class="frame1536wdefault-thq-atextgray600-elm2">
-                            <span
-                              class="frame1536wdefault-thq-text-elm201 www.figma.comInterRegular7"
-                            >
-                              hminh3084@gmail.com
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="frame1536wdefault-thq-divmt12-elm">
-                    <div class="frame1536wdefault-thq-ptextsm-elm2">
-                      <span
-                        class="frame1536wdefault-thq-text-elm202 www.figma.comInterRegular6"
-                      >
-                        © 2026 Sneaker Store. | Thiết kế bởi Minh Huy
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="frame1536wdefault-thq-headersticky-elm">
-                <div class="frame1536wdefault-thq-divbgblack-elm">
-                  <div class="frame1536wdefault-thq-p-elm">
-                    <span
-                      class="frame1536wdefault-thq-text-elm203 www.figma.comInterRegular12"
-                    >
-                      🔥 MIỄN PHÍ VẬN CHUYỂN CHO ĐơN HÀNG TRÊN 2.000.000₫ 🔥
-                    </span>
-                  </div>
-                </div>
-                <div class="frame1536wdefault-thq-divflex-elm18">
-                  <a
-                    href="./product.html"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    class="frame1536wdefault-link31"
-                  >
-                    <div class="frame1536wdefault-thq-aflex-elm">
-                      <div class="frame1536wdefault-thq-divw10margin-elm">
-                        <div class="frame1536wdefault-thq-divw10-elm">
-                          <div
-                            class="frame1536wdefault-thq-spantextwhite-elm"
-                          ></div>
-                        </div>
-                      </div>
-                      <div class="frame1536wdefault-thq-spantextxl-elm">
-                        <span
-                          class="frame1536wdefault-thq-text-elm204 www.figma.comInterBold5"
-                        >
-                          SNEAKER STORE
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                  <div class="frame1536wdefault-thq-navhidden-elm">
-                    <div class="frame1536wdefault-thq-atextsmmargin-elm1">
-                      <span
-                        class="frame1536wdefault-thq-text-elm205 www.figma.comInterMedium2"
-                      >
-                        Trang Chủ
-                      </span>
-                    </div>
-                    <div class="frame1536wdefault-thq-atextsmmargin-elm2">
-                      <span
-                        class="frame1536wdefault-thq-text-elm206 www.figma.comInterMedium3"
-                      >
-                        Giày Nam
-                      </span>
-                    </div>
-                    <div class="frame1536wdefault-thq-atextsmmargin-elm3">
-                      <span
-                        class="frame1536wdefault-thq-text-elm207 www.figma.comInterMedium4"
-                      >
-                        Giày Nữ
-                      </span>
-                    </div>
-                    <div class="frame1536wdefault-thq-atextsmmargin-elm4">
-                      <span
-                        class="frame1536wdefault-thq-text-elm208 www.figma.comInterMedium1"
-                      >
-                        Dép
-                      </span>
-                    </div>
-                    <div class="frame1536wdefault-thq-atextsmmargin-elm5">
-                      <span
-                        class="frame1536wdefault-thq-text-elm209 www.figma.comInterMedium1"
-                      >
-                        Phụ Kiện
-                      </span>
-                    </div>
-                    <div class="frame1536wdefault-thq-atextsmmargin-elm6">
-                      <span
-                        class="frame1536wdefault-thq-text-elm210 www.figma.comInterMedium"
-                      >
-                        Limited Edition
-                      </span>
-                    </div>
-                    <div class="frame1536wdefault-thq-atextsmmargin-elm7">
-                      <span
-                        class="frame1536wdefault-thq-text-elm211 www.figma.comInterMedium3"
-                      >
-                        Về Chúng Tôi
-                      </span>
-                    </div>
-                    <div class="frame1536wdefault-thq-atextsm-elm4">
-                      <span
-                        class="frame1536wdefault-thq-text-elm212 www.figma.comInterMedium1"
-                      >
-                        Liên Hệ
-                      </span>
-                    </div>
-                  </div>
-                  <div class="frame1536wdefault-thq-divflex-elm19">
-                    <button class="frame1536wdefault-thq-buttonp2margin-elm1">
-                      <img
-                        src="public/frame4625-l1uh.svg"
-                        alt="Frame4625"
-                        class="frame1536wdefault-thq-frame-elm21"
-                      />
-                    </button>
-                    <button class="frame1536wdefault-thq-buttonp2margin-elm2">
-                      <img
-                        src="public/frame4629-6krm.svg"
-                        alt="Frame4629"
-                        class="frame1536wdefault-thq-frame-elm22"
-                      />
-                    </button>
-                    <div class="frame1536wdefault-thq-togglethememargin-elm">
-                      <img
-                        src="public/toggletheme4633-zxxe.svg"
-                        alt="Toggletheme4633"
-                        class="frame1536wdefault-thq-toggletheme-elm"
-                      />
-                    </div>
-                    <div class="frame1536wdefault-thq-arelativemargin-elm">
-                      <a
-                        href="./product.html"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        class="frame1536wdefault-link32"
-                      >
-                        <img
-                          src="public/frame4636-nhxb.svg"
-                          alt="Frame4636"
-                          class="frame1536wdefault-thq-frame-elm23"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a
-          href="https://play.teleporthq.io/signup"
-          class="frame1536wdefault-link33"
-        >
-          <div
-            aria-label="Sign up to TeleportHQ"
-            class="frame1536wdefault-container2"
-          >
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 19 21"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="frame1536wdefault-icon1"
-            >
-              <path
-                d="M9.1017 4.64355H2.17867C0.711684 4.64355 -0.477539 5.79975 -0.477539 7.22599V13.9567C-0.477539 15.3829 0.711684 16.5391 2.17867 16.5391H9.1017C10.5687 16.5391 11.7579 15.3829 11.7579 13.9567V7.22599C11.7579 5.79975 10.5687 4.64355 9.1017 4.64355Z"
-                fill="#B23ADE"
-              ></path>
-              <path
-                d="M10.9733 12.7878C14.4208 12.7878 17.2156 10.0706 17.2156 6.71886C17.2156 3.3671 14.4208 0.649963 10.9733 0.649963C7.52573 0.649963 4.73096 3.3671 4.73096 6.71886C4.73096 10.0706 7.52573 12.7878 10.9733 12.7878Z"
-                fill="#FF5C5C"
-              ></path>
-              <path
-                d="M17.7373 13.3654C19.1497 14.1588 19.1497 15.4634 17.7373 16.2493L10.0865 20.5387C8.67402 21.332 7.51855 20.6836 7.51855 19.0968V10.5141C7.51855 8.92916 8.67402 8.2807 10.0865 9.07221L17.7373 13.3654Z"
-                fill="#2874DE"
-              ></path>
-            </svg>
-            <span class="frame1536wdefault-text3">Built in TeleportHQ</span>
-          </div>
-        </a>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <a href="./index.html" class="navbar-logo">SNEAKER STORE</a>
+      <div class="navbar-links">
+        <a href="./index.html">Trang Chủ</a>
+        <a href="./product.html">Sản Phẩm</a>
+        <a href="./product.html">Giày Nam</a>
+        <a href="./product.html">Giày Nữ</a>
+        <a href="./product.html">Dép</a>
+        <a href="./product.html">Phụ Kiện</a>
+        <a href="./product.html">Limited Edition</a>
+        <a href="#">Về Chúng Tôi</a>
+        <a href="#">Liên Hệ</a>
       </div>
-      <link rel="canonical" href="https://web-an7o9n.teleporthq.app/" />
+      <div class="navbar-icons">
+        <img src="public/frame4625-l1uh.svg" alt="search" />
+        <img src="public/frame4629-6krm.svg" alt="cart" />
+        <a href="./product.html"><img src="public/frame4636-nhxb.svg" alt="user" /></a>
+      </div>
+    </nav>
+
+    <!-- HERO BANNER -->
+    <div class="hero">
+      <img src="public/divabsolute415-t9wq-1600w.png" alt="" class="hero-bg" />
+      <img src="public/divabsolute417-fo9i-1600w.png" alt="" class="hero-overlay" />
+      <div class="hero-content">
+        <h1>SHOP THE LOOK</h1>
+        <p>Khám phá bộ sưu tập sneaker độc quyền mới nhất</p>
+        <a href="./product.html" class="hero-btn">Mua Ngay</a>
+      </div>
     </div>
-    <script>
-      // Fix product card links -> product-detail
-      var productLinks = [
-        { selector: '.frame1536wdefault-link11', id: 1 },
-        { selector: '.frame1536wdefault-link12', id: 2 },
-        { selector: '.frame1536wdefault-link13', id: 3 },
-        { selector: '.frame1536wdefault-link14', id: 4 },
-        { selector: '.frame1536wdefault-link19', id: 5 },
-        { selector: '.frame1536wdefault-link20', id: 6 },
-        { selector: '.frame1536wdefault-link21', id: 7 },
-        { selector: '.frame1536wdefault-link22', id: 8 },
-      ];
-      productLinks.forEach(function(p) {
-        var el = document.querySelector(p.selector);
-        if (el) {
-          el.href = './product-detail.html?id=' + p.id;
-          el.removeAttribute('target');
-        }
-      });
 
-      // Fix "Xem Tất Cả" links -> product.html (same tab)
-      ['.frame1536wdefault-link10', '.frame1536wdefault-link18'].forEach(function(sel) {
-        var el = document.querySelector(sel);
-        if (el) { el.href = './product.html'; el.removeAttribute('target'); }
-      });
+    <!-- SẢN PHẨM NỔI BẬT -->
+    <div class="section">
+      <div class="section-inner">
+        <div class="section-header">
+          <div class="section-title">
+            <img src="public/frame464-9p2j.svg" alt="" />
+            <h2>Sản Phẩm Nổi Bật</h2>
+          </div>
+          <a href="./product.html" class="btn-viewall">
+            Xem Tất Cả <img src="public/frame481-i08c.svg" alt="" />
+          </a>
+        </div>
+        <div class="product-grid">
+          <a href="./product-detail.html?id=1" class="pcard">
+            <div class="pcard-img" style="background-image:url('public/tq_gquycljss2-6i4w-1500w.png')">
+              <div class="pcard-badges"><span class="badge badge-hot">HOT</span></div>
+            </div>
+            <div class="pcard-info">
+              <div class="pcard-brand">Jordan x Dior</div>
+              <div class="pcard-name">Air Jordan 1 x Dior High</div>
+              <div class="pcard-cat">Dior Collab</div>
+              <div class="pcard-price">85.000.000 ₫</div>
+            </div>
+          </a>
+          <a href="./product-detail.html?id=2" class="pcard">
+            <div class="pcard-img" style="background-image:url('public/tq_ypwzdgntei-cghv-1500w.png')">
+              <div class="pcard-badges"><span class="badge badge-hot">HOT</span></div>
+            </div>
+            <div class="pcard-info">
+              <div class="pcard-brand">Jordan x Travis Scott</div>
+              <div class="pcard-name">Air Jordan 1 x Travis Scott</div>
+              <div class="pcard-cat">Travis Scott Collab</div>
+              <div class="pcard-price">42.000.000 ₫</div>
+            </div>
+          </a>
+          <a href="./product-detail.html?id=3" class="pcard">
+            <div class="pcard-img" style="background-image:url('public/tq_arooc0aocm-oerl-1500w.png')">
+              <div class="pcard-badges"><span class="badge badge-hot">HOT</span></div>
+            </div>
+            <div class="pcard-info">
+              <div class="pcard-brand">Nike x Off-White</div>
+              <div class="pcard-name">Nike x Off-White Collection</div>
+              <div class="pcard-cat">Off-White Collab</div>
+              <div class="pcard-price">38.000.000 ₫</div>
+            </div>
+          </a>
+          <a href="./product-detail.html?id=4" class="pcard">
+            <div class="pcard-img" style="background-image:url('public/tq_8yjdzrca_d-749q-1500w.png')">
+              <div class="pcard-badges"><span class="badge badge-hot">HOT</span><span class="badge badge-sale">BÁN CHẠY</span></div>
+            </div>
+            <div class="pcard-info">
+              <div class="pcard-brand">Nike</div>
+              <div class="pcard-name">Air Jordan 1 Retro High</div>
+              <div class="pcard-cat">Basketball</div>
+              <div class="pcard-price">4.200.000 ₫</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
 
-      // Fix menu items -> product.html
-      ['.frame1536wdefault-thq-atextsmmargin-elm2'].forEach(function(sel) {
-        var el = document.querySelector(sel);
-        if (el) { el.style.cursor = 'pointer'; el.onclick = function(){ window.location.href='./product.html'; }; }
-      });
-    </script>
+    <!-- DANH MỤC -->
+    <div class="section section-bg">
+      <div class="section-inner">
+        <div class="cat-grid">
+          <a href="./product.html" class="cat-card">
+            <img src="public/divabsolute4196-4n2w-400h.png" alt="Giày Nam" />
+            <div class="cat-card-overlay"></div>
+            <div class="cat-card-info">
+              <h3>GIÀY NAM</h3>
+              <span>Khám Phá Ngay →</span>
+            </div>
+          </a>
+          <a href="./product.html" class="cat-card">
+            <img src="public/divabsolute4210-uw9-400h.png" alt="Giày Nữ" />
+            <div class="cat-card-overlay"></div>
+            <div class="cat-card-info">
+              <h3>GIÀY NỮ</h3>
+              <span>Khám Phá Ngay →</span>
+            </div>
+          </a>
+          <a href="./product.html" class="cat-card">
+            <img src="public/divabsolute4224-kh5j-400h.png" alt="Phụ Kiện" />
+            <div class="cat-card-overlay"></div>
+            <div class="cat-card-info">
+              <h3>PHỤ KIỆN</h3>
+              <span>Khám Phá Ngay →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- BÁN CHẠY NHẤT -->
+    <div class="section">
+      <div class="section-inner">
+        <div class="section-header">
+          <div class="section-title">
+            <img src="public/frame4511-jtv.svg" alt="" />
+            <h2>Bán Chạy Nhất</h2>
+          </div>
+          <a href="./product.html" class="btn-viewall">
+            Xem Tất Cả <img src="public/frame4248-mruh.svg" alt="" />
+          </a>
+        </div>
+        <div class="product-grid">
+          <a href="./product-detail.html?id=4" class="pcard">
+            <div class="pcard-img" style="background-image:url('public/tq_6jjjpnihgu-vif4-1500w.png')">
+              <div class="pcard-badges"><span class="badge badge-hot">HOT</span><span class="badge badge-sale">BÁN CHẠY</span></div>
+            </div>
+            <div class="pcard-info">
+              <div class="pcard-brand">Nike</div>
+              <div class="pcard-name">Air Jordan 1 Retro High</div>
+              <div class="pcard-cat">Basketball</div>
+              <div class="pcard-price">4.200.000 ₫</div>
+            </div>
+          </a>
+          <a href="./product-detail.html?id=6" class="pcard">
+            <div class="pcard-img" style="background-image:url('public/tq_5cykavvul3-uaqp-1500w.png')">
+              <div class="pcard-badges"><span class="badge badge-sale">BÁN CHẠY</span></div>
+            </div>
+            <div class="pcard-info">
+              <div class="pcard-brand">Nike</div>
+              <div class="pcard-name">Air Force 1 Low White</div>
+              <div class="pcard-cat">Lifestyle</div>
+              <div class="pcard-price">2.800.000 ₫</div>
+            </div>
+          </a>
+          <a href="./product-detail.html?id=7" class="pcard">
+            <div class="pcard-img" style="background-image:url('public/tq_c-d7d3r4hd-2ul9-1500w.png')">
+              <div class="pcard-badges"><span class="badge badge-sale">BÁN CHẠY</span></div>
+            </div>
+            <div class="pcard-info">
+              <div class="pcard-brand">New Balance</div>
+              <div class="pcard-name">New Balance 550 White Green</div>
+              <div class="pcard-cat">Lifestyle</div>
+              <div class="pcard-price">2.900.000 ₫</div>
+            </div>
+          </a>
+          <a href="./product-detail.html?id=12" class="pcard">
+            <div class="pcard-img" style="background-image:url('public/tq_pwie4moijp-dvj-1500w.png')">
+              <div class="pcard-badges"><span class="badge badge-sale">BÁN CHẠY</span></div>
+            </div>
+            <div class="pcard-info">
+              <div class="pcard-brand">Converse</div>
+              <div class="pcard-name">Converse Chuck Taylor All Star High</div>
+              <div class="pcard-cat">Casual</div>
+              <div class="pcard-price">1.800.000 ₫</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- HÀNG MỚI VỀ -->
+    <div class="section section-bg">
+      <div class="section-inner">
+        <div class="section-header">
+          <div class="section-title">
+            <img src="public/frame4348-u8d8.svg" alt="" />
+            <h2>Hàng Mới Về</h2>
+          </div>
+          <a href="./product.html" class="btn-viewall">
+            Xem Tất Cả <img src="public/frame4361-alga.svg" alt="" />
+          </a>
+        </div>
+        <div class="product-grid">
+          <a href="./product-detail.html?id=7" class="pcard">
+            <div class="pcard-img" style="background-image:url('public/tq_cloclj0emi-9eh4-1500w.png')">
+              <div class="pcard-badges"><span class="badge badge-new">MỚI</span></div>
+            </div>
+            <div class="pcard-info">
+              <div class="pcard-brand">Nike</div>
+              <div class="pcard-name">Nike Dunk Low Retro</div>
+              <div class="pcard-cat">Skateboarding</div>
+              <div class="pcard-price">3.200.000 ₫</div>
+            </div>
+          </a>
+          <a href="./product-detail.html?id=8" class="pcard">
+            <div class="pcard-img" style="background-image:url('public/tq_fyln7pxnuw-wl3s-1500w.png')">
+              <div class="pcard-badges"><span class="badge badge-new">MỚI</span></div>
+            </div>
+            <div class="pcard-info">
+              <div class="pcard-brand">Puma</div>
+              <div class="pcard-name">Puma RS-X Colorway</div>
+              <div class="pcard-cat">Running</div>
+              <div class="pcard-price">2.700.000 ₫</div>
+            </div>
+          </a>
+          <a href="./product-detail.html?id=9" class="pcard">
+            <div class="pcard-img" style="background-image:url('public/tq_o862czeini-d7ov-1500w.png')">
+              <div class="pcard-badges"><span class="badge badge-new">MỚI</span></div>
+            </div>
+            <div class="pcard-info">
+              <div class="pcard-brand">Nike</div>
+              <div class="pcard-name">Nike React Infinity Run</div>
+              <div class="pcard-cat">Running</div>
+              <div class="pcard-price">3.900.000 ₫</div>
+            </div>
+          </a>
+          <a href="./product-detail.html?id=10" class="pcard">
+            <div class="pcard-img" style="background-image:url('public/tq_g8dv8a-j3u-8vjj-1500w.png')">
+              <div class="pcard-badges"><span class="badge badge-new">MỚI</span></div>
+            </div>
+            <div class="pcard-info">
+              <div class="pcard-brand">Nike</div>
+              <div class="pcard-name">Dunk Low Pink - Women</div>
+              <div class="pcard-cat">Casual</div>
+              <div class="pcard-price">3.000.000 ₫</div>
+            </div>
+          </a>
+          <a href="./product-detail.html?id=11" class="pcard">
+            <div class="pcard-img" style="background-image:url('public/tq_arooc0aocm-oerl-1500w.png')">
+              <div class="pcard-badges"><span class="badge badge-new">MỚI</span></div>
+            </div>
+            <div class="pcard-info">
+              <div class="pcard-brand">Designer</div>
+              <div class="pcard-name">Designer Sunglasses Collection</div>
+              <div class="pcard-cat">Kính</div>
+              <div class="pcard-price">4.200.000 ₫</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div class="newsletter">
+      <h2>Đăng Ký Nhận Tin Mới Nhất</h2>
+      <p>Nhận thông tin về sản phẩm mới, ưu đãi đặc biệt và tin tức từ Sneaker Store</p>
+      <div class="newsletter-form">
+        <input type="email" placeholder="Nhập email của bạn..." />
+        <button>Đăng Ký</button>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-brand">SNEAKER STORE</div>
+          <div class="footer-desc">Cửa hàng sneaker chính hãng, collab độc quyền. Phong cách đường phố đỉnh cao tại Việt Nam.</div>
+        </div>
+        <div class="footer-col">
+          <h4>Điều Hướng</h4>
+          <a href="./index.html">Trang Chủ</a>
+          <a href="./product.html">Sản Phẩm</a>
+          <a href="#">Về Chúng Tôi</a>
+          <a href="#">Liên Hệ</a>
+        </div>
+        <div class="footer-col">
+          <h4>Danh Mục</h4>
+          <a href="./product.html">Giày Nam</a>
+          <a href="./product.html">Giày Nữ</a>
+          <a href="./product.html">Phụ Kiện</a>
+          <a href="./product.html">Limited Edition</a>
+        </div>
+        <div class="footer-col">
+          <h4>Liên Hệ</h4>
+          <a href="#">419 Minh Lý, P. Tân Sơn Nhì</a>
+          <a href="#">0917 079 1072</a>
+          <a href="#">hminh3084@gmail.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Sneaker Store. All rights reserved.</span>
+        <span>Hướng Dẫn Mua Hàng · Chính Sách Đổi Trả</span>
+      </div>
+    </footer>
+
   </body>
 </html>
-
