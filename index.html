@@ -332,13 +332,21 @@
         margin: 0 auto !important;
       }
 
-      /* ===== FONT CHỮ SECTION TITLES ===== */
+      /* ===== FONT CHỮ SECTION TITLES - 1 hàng ===== */
       .frame1536wdefault-thq-text-elm100,
       .frame1536wdefault-thq-text-elm129 {
         font-family: 'Inter', sans-serif !important;
         font-size: 24px !important;
         font-weight: 700 !important;
         letter-spacing: -0.3px !important;
+        white-space: nowrap !important;
+        line-height: 1.2 !important;
+      }
+      /* Container tiêu đề section */
+      .frame1536wdefault-thq-h2text3xl-elm1,
+      .frame1536wdefault-thq-h2text3xl-elm2 {
+        white-space: nowrap !important;
+        overflow: visible !important;
       }
 
       /* ===== BUTTON "XEM TẤT CẢ" ===== */
@@ -431,7 +439,11 @@
       .frame1536wdefault-thq-divp4-elm12,
       .frame1536wdefault-thq-divp4-elm13,
       .frame1536wdefault-thq-divp4-elm14,
-      .frame1536wdefault-thq-divp4-elm15 {
+      .frame1536wdefault-thq-divp4-elm15,
+      .frame1536wdefault-thq-divp4-elm16,
+      .frame1536wdefault-thq-divp4-elm17,
+      .frame1536wdefault-thq-divp4-elm18,
+      .frame1536wdefault-thq-divp4-elm19 {
         padding: 14px 16px 16px !important;
         gap: 3px !important;
         display: flex !important;
@@ -444,7 +456,11 @@
       .frame1536wdefault-thq-text-elm113,
       .frame1536wdefault-thq-text-elm119,
       .frame1536wdefault-thq-text-elm133,
-      .frame1536wdefault-thq-text-elm138 {
+      .frame1536wdefault-thq-text-elm138,
+      .frame1536wdefault-thq-text-elm143,
+      .frame1536wdefault-thq-text-elm148,
+      .frame1536wdefault-thq-text-elm153,
+      .frame1536wdefault-thq-text-elm158 {
         font-family: 'Inter', sans-serif !important;
         font-size: 11px !important;
         font-weight: 500 !important;
@@ -460,7 +476,11 @@
       .frame1536wdefault-thq-text-elm114,
       .frame1536wdefault-thq-text-elm120,
       .frame1536wdefault-thq-text-elm134,
-      .frame1536wdefault-thq-text-elm139 {
+      .frame1536wdefault-thq-text-elm139,
+      .frame1536wdefault-thq-text-elm144,
+      .frame1536wdefault-thq-text-elm149,
+      .frame1536wdefault-thq-text-elm154,
+      .frame1536wdefault-thq-text-elm159 {
         font-family: 'Inter', sans-serif !important;
         font-size: 14px !important;
         font-weight: 700 !important;
@@ -475,7 +495,11 @@
       .frame1536wdefault-thq-text-elm115,
       .frame1536wdefault-thq-text-elm121,
       .frame1536wdefault-thq-text-elm135,
-      .frame1536wdefault-thq-text-elm140 {
+      .frame1536wdefault-thq-text-elm140,
+      .frame1536wdefault-thq-text-elm145,
+      .frame1536wdefault-thq-text-elm150,
+      .frame1536wdefault-thq-text-elm155,
+      .frame1536wdefault-thq-text-elm160 {
         font-family: 'Inter', sans-serif !important;
         font-size: 11px !important;
         font-weight: 400 !important;
@@ -489,7 +513,11 @@
       .frame1536wdefault-thq-text-elm116,
       .frame1536wdefault-thq-text-elm122,
       .frame1536wdefault-thq-text-elm136,
-      .frame1536wdefault-thq-text-elm141 {
+      .frame1536wdefault-thq-text-elm141,
+      .frame1536wdefault-thq-text-elm146,
+      .frame1536wdefault-thq-text-elm151,
+      .frame1536wdefault-thq-text-elm156,
+      .frame1536wdefault-thq-text-elm161 {
         font-family: 'Inter', sans-serif !important;
         font-size: 16px !important;
         font-weight: 700 !important;
@@ -498,13 +526,51 @@
         line-height: 1.3 !important;
       }
 
-      /* Card hover effect */
+      /* Badge overlay - thêm các elm còn thiếu */
+      .frame1536wdefault-thq-divabsolute-elm12,
+      .frame1536wdefault-thq-divabsolute-elm13,
+      .frame1536wdefault-thq-divabsolute-elm14,
+      .frame1536wdefault-thq-divabsolute-elm15,
+      .frame1536wdefault-thq-divabsolute-elm25,
+      .frame1536wdefault-thq-divabsolute-elm26,
+      .frame1536wdefault-thq-divabsolute-elm27,
+      .frame1536wdefault-thq-divabsolute-elm28,
+      .frame1536wdefault-thq-divabsolute-elm29,
+      .frame1536wdefault-thq-divabsolute-elm30 {
+        position: absolute !important;
+        top: 10px !important;
+        left: 10px !important;
+        z-index: 2 !important;
+      }
+
+      /* Badge blue thêm */
+      .frame1536wdefault-thq-spanbgblue500-elm4,
+      .frame1536wdefault-thq-spanbgblue500-elm5 {
+        background: #2b7fff !important;
+        border-radius: 6px !important;
+        padding: 3px 8px !important;
+      }
+      .frame1536wdefault-thq-text-elm142,
+      .frame1536wdefault-thq-text-elm147,
+      .frame1536wdefault-thq-text-elm152,
+      .frame1536wdefault-thq-text-elm157 {
+        font-family: 'Inter', sans-serif !important;
+        font-size: 11px !important;
+        font-weight: 700 !important;
+        color: #fff !important;
+        line-height: 1 !important;
+      }
+
+      /* Card hover - thêm elm14-18 */
       .frame1536wdefault-thq-agroup-elm10,
       .frame1536wdefault-thq-agroup-elm11,
       .frame1536wdefault-thq-agroup-elm12,
       .frame1536wdefault-thq-agroup-elm13,
       .frame1536wdefault-thq-agroup-elm14,
-      .frame1536wdefault-thq-agroup-elm15 {
+      .frame1536wdefault-thq-agroup-elm15,
+      .frame1536wdefault-thq-agroup-elm16,
+      .frame1536wdefault-thq-agroup-elm17,
+      .frame1536wdefault-thq-agroup-elm18 {
         transition: box-shadow 0.25s, transform 0.25s !important;
         border-radius: 12px !important;
         overflow: hidden !important;
@@ -514,7 +580,10 @@
       .frame1536wdefault-thq-agroup-elm12:hover,
       .frame1536wdefault-thq-agroup-elm13:hover,
       .frame1536wdefault-thq-agroup-elm14:hover,
-      .frame1536wdefault-thq-agroup-elm15:hover {
+      .frame1536wdefault-thq-agroup-elm15:hover,
+      .frame1536wdefault-thq-agroup-elm16:hover,
+      .frame1536wdefault-thq-agroup-elm17:hover,
+      .frame1536wdefault-thq-agroup-elm18:hover {
         box-shadow: 0 12px 32px rgba(0,0,0,0.18) !important;
         transform: translateY(-4px) !important;
       }
