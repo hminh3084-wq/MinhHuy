@@ -350,12 +350,15 @@
         display: inline-flex !important;
         align-items: center !important;
         gap: 6px !important;
-        padding: 8px 18px !important;
+        padding: 9px 20px !important;
         background: #121212 !important;
         color: #fff !important;
         border-radius: 24px !important;
         transition: background 0.2s !important;
         cursor: pointer !important;
+        white-space: nowrap !important;
+        flex-wrap: nowrap !important;
+        flex-direction: row !important;
       }
       .frame1536wdefault-thq-atextsm-elm1:hover,
       .frame1536wdefault-thq-atextsm-elm2:hover { background: #333 !important; }
@@ -365,9 +368,77 @@
         font-size: 13px !important;
         font-weight: 600 !important;
         color: #fff !important;
+        white-space: nowrap !important;
+        line-height: 1 !important;
+      }
+      /* icon mũi tên trong button */
+      .frame1536wdefault-thq-frame-elm11,
+      .frame1536wdefault-thq-frame-elm16 {
+        filter: invert(1) !important;
+        flex-shrink: 0 !important;
       }
 
-      /* ===== PRODUCT CARDS font ===== */
+      /* ===== PRODUCT CARDS ===== */
+      /* Badge overlay đúng vị trí */
+      .frame1536wdefault-thq-divabsolute-elm12,
+      .frame1536wdefault-thq-divabsolute-elm13,
+      .frame1536wdefault-thq-divabsolute-elm14,
+      .frame1536wdefault-thq-divabsolute-elm15,
+      .frame1536wdefault-thq-divabsolute-elm25,
+      .frame1536wdefault-thq-divabsolute-elm26 {
+        position: absolute !important;
+        top: 10px !important;
+        left: 10px !important;
+        z-index: 2 !important;
+      }
+
+      /* Badge style */
+      .frame1536wdefault-thq-spanbgred500-elm1,
+      .frame1536wdefault-thq-spanbgred500-elm2,
+      .frame1536wdefault-thq-spanbgred500-elm3,
+      .frame1536wdefault-thq-spanbgred500-elm4,
+      .frame1536wdefault-thq-spanbgred500-elm5 {
+        background: #fa2b36 !important;
+        border-radius: 6px !important;
+        padding: 3px 8px !important;
+        margin-bottom: 4px !important;
+      }
+      .frame1536wdefault-thq-spanbgblue500-elm1,
+      .frame1536wdefault-thq-spanbgblue500-elm2,
+      .frame1536wdefault-thq-spanbgblue500-elm3 {
+        background: #2b7fff !important;
+        border-radius: 6px !important;
+        padding: 3px 8px !important;
+      }
+      .frame1536wdefault-thq-text-elm102,
+      .frame1536wdefault-thq-text-elm107,
+      .frame1536wdefault-thq-text-elm112,
+      .frame1536wdefault-thq-text-elm117,
+      .frame1536wdefault-thq-text-elm118,
+      .frame1536wdefault-thq-text-elm131,
+      .frame1536wdefault-thq-text-elm132,
+      .frame1536wdefault-thq-text-elm137 {
+        font-family: 'Inter', sans-serif !important;
+        font-size: 11px !important;
+        font-weight: 700 !important;
+        color: #fff !important;
+        line-height: 1 !important;
+      }
+
+      /* Card info padding & layout */
+      .frame1536wdefault-thq-divp4-elm10,
+      .frame1536wdefault-thq-divp4-elm11,
+      .frame1536wdefault-thq-divp4-elm12,
+      .frame1536wdefault-thq-divp4-elm13,
+      .frame1536wdefault-thq-divp4-elm14,
+      .frame1536wdefault-thq-divp4-elm15 {
+        padding: 14px 16px 16px !important;
+        gap: 3px !important;
+        display: flex !important;
+        flex-direction: column !important;
+      }
+
+      /* Brand text */
       .frame1536wdefault-thq-text-elm103,
       .frame1536wdefault-thq-text-elm108,
       .frame1536wdefault-thq-text-elm113,
@@ -377,7 +448,13 @@
         font-family: 'Inter', sans-serif !important;
         font-size: 11px !important;
         font-weight: 500 !important;
+        color: #697282 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.5px !important;
+        line-height: 1.4 !important;
       }
+
+      /* Product name */
       .frame1536wdefault-thq-text-elm104,
       .frame1536wdefault-thq-text-elm109,
       .frame1536wdefault-thq-text-elm114,
@@ -387,7 +464,26 @@
         font-family: 'Inter', sans-serif !important;
         font-size: 14px !important;
         font-weight: 700 !important;
+        color: #0a0a0a !important;
+        line-height: 1.35 !important;
+        margin-top: 2px !important;
       }
+
+      /* Category text */
+      .frame1536wdefault-thq-text-elm105,
+      .frame1536wdefault-thq-text-elm110,
+      .frame1536wdefault-thq-text-elm115,
+      .frame1536wdefault-thq-text-elm121,
+      .frame1536wdefault-thq-text-elm135,
+      .frame1536wdefault-thq-text-elm140 {
+        font-family: 'Inter', sans-serif !important;
+        font-size: 11px !important;
+        font-weight: 400 !important;
+        color: #697282 !important;
+        line-height: 1.4 !important;
+      }
+
+      /* Price */
       .frame1536wdefault-thq-text-elm106,
       .frame1536wdefault-thq-text-elm111,
       .frame1536wdefault-thq-text-elm116,
@@ -397,6 +493,30 @@
         font-family: 'Inter', sans-serif !important;
         font-size: 16px !important;
         font-weight: 700 !important;
+        color: #0a0a0a !important;
+        margin-top: 6px !important;
+        line-height: 1.3 !important;
+      }
+
+      /* Card hover effect */
+      .frame1536wdefault-thq-agroup-elm10,
+      .frame1536wdefault-thq-agroup-elm11,
+      .frame1536wdefault-thq-agroup-elm12,
+      .frame1536wdefault-thq-agroup-elm13,
+      .frame1536wdefault-thq-agroup-elm14,
+      .frame1536wdefault-thq-agroup-elm15 {
+        transition: box-shadow 0.25s, transform 0.25s !important;
+        border-radius: 12px !important;
+        overflow: hidden !important;
+      }
+      .frame1536wdefault-thq-agroup-elm10:hover,
+      .frame1536wdefault-thq-agroup-elm11:hover,
+      .frame1536wdefault-thq-agroup-elm12:hover,
+      .frame1536wdefault-thq-agroup-elm13:hover,
+      .frame1536wdefault-thq-agroup-elm14:hover,
+      .frame1536wdefault-thq-agroup-elm15:hover {
+        box-shadow: 0 12px 32px rgba(0,0,0,0.18) !important;
+        transform: translateY(-4px) !important;
       }
     </style>
   </head>
