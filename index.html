@@ -262,6 +262,143 @@
       rel="stylesheet"
       href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
     />
+    <style>
+      /* ===== GLOBAL OVERRIDE ===== */
+      html, body { font-family: 'Inter', sans-serif !important; }
+
+      /* Ẩn nút TeleportHQ */
+      .frame1536wdefault-link33,
+      .frame1536wdefault-container2 { display: none !important; }
+
+      /* ===== NAVBAR ===== */
+      .frame1536wdefault-thq-divminhscreen-elm1 > div:first-child,
+      [class*="navbar"], [class*="header"] { position: relative; }
+
+      /* Override navbar container - canh giữa nội dung */
+      .frame1536wdefault-thq-divfigcoderoot-elm { width: 100% !important; left: 0 !important; }
+      .frame1536wdefault-thq-divminhscreen-elm2 { width: 100% !important; left: 0 !important; }
+
+      /* Fix font chữ menu navbar */
+      .frame1536wdefault-thq-atextsmmargin-elm1 span,
+      .frame1536wdefault-thq-atextsmmargin-elm2 span,
+      .frame1536wdefault-thq-atextsmmargin-elm3 span,
+      .frame1536wdefault-thq-atextsmmargin-elm4 span,
+      .frame1536wdefault-thq-atextsmmargin-elm5 span,
+      .frame1536wdefault-thq-atextsmmargin-elm6 span,
+      .frame1536wdefault-thq-atextsmmargin-elm7 span,
+      .frame1536wdefault-thq-atextsm-elm4 span {
+        font-family: 'Inter', sans-serif !important;
+        font-size: 14px !important;
+        font-weight: 500 !important;
+        letter-spacing: 0 !important;
+        cursor: pointer;
+      }
+      .frame1536wdefault-thq-atextsmmargin-elm1,
+      .frame1536wdefault-thq-atextsmmargin-elm2,
+      .frame1536wdefault-thq-atextsmmargin-elm3,
+      .frame1536wdefault-thq-atextsmmargin-elm4,
+      .frame1536wdefault-thq-atextsmmargin-elm5,
+      .frame1536wdefault-thq-atextsmmargin-elm6,
+      .frame1536wdefault-thq-atextsmmargin-elm7,
+      .frame1536wdefault-thq-atextsm-elm4 {
+        cursor: pointer;
+        transition: opacity 0.2s;
+      }
+      .frame1536wdefault-thq-atextsmmargin-elm1:hover span,
+      .frame1536wdefault-thq-atextsmmargin-elm2:hover span,
+      .frame1536wdefault-thq-atextsmmargin-elm3:hover span,
+      .frame1536wdefault-thq-atextsmmargin-elm4:hover span,
+      .frame1536wdefault-thq-atextsmmargin-elm5:hover span,
+      .frame1536wdefault-thq-atextsmmargin-elm6:hover span,
+      .frame1536wdefault-thq-atextsmmargin-elm7:hover span,
+      .frame1536wdefault-thq-atextsm-elm4:hover span { opacity: 0.7; }
+
+      /* ===== SECTION CANH GIỮA ===== */
+      .frame1536wdefault-thq-sectionpy16-elm1,
+      .frame1536wdefault-thq-sectionpy16-elm2,
+      .frame1536wdefault-thq-sectionpy16-elm3 {
+        display: flex !important;
+        justify-content: center !important;
+      }
+      .frame1536wdefault-thq-divcontainer-elm1,
+      .frame1536wdefault-thq-divcontainer-elm2 {
+        max-width: 1400px !important;
+        width: 100% !important;
+        margin: 0 auto !important;
+      }
+      .frame1536wdefault-thq-divgrid-elm2 {
+        max-width: 1400px !important;
+        width: 100% !important;
+        margin: 0 auto !important;
+      }
+
+      /* ===== FONT CHỮ SECTION TITLES ===== */
+      .frame1536wdefault-thq-text-elm100,
+      .frame1536wdefault-thq-text-elm129 {
+        font-family: 'Inter', sans-serif !important;
+        font-size: 24px !important;
+        font-weight: 700 !important;
+        letter-spacing: -0.3px !important;
+      }
+
+      /* ===== BUTTON "XEM TẤT CẢ" ===== */
+      .frame1536wdefault-link10,
+      .frame1536wdefault-link18 { display: contents !important; }
+
+      .frame1536wdefault-thq-atextsm-elm1,
+      .frame1536wdefault-thq-atextsm-elm2 {
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 6px !important;
+        padding: 8px 18px !important;
+        background: #121212 !important;
+        color: #fff !important;
+        border-radius: 24px !important;
+        transition: background 0.2s !important;
+        cursor: pointer !important;
+      }
+      .frame1536wdefault-thq-atextsm-elm1:hover,
+      .frame1536wdefault-thq-atextsm-elm2:hover { background: #333 !important; }
+      .frame1536wdefault-thq-text-elm101,
+      .frame1536wdefault-thq-text-elm130 {
+        font-family: 'Inter', sans-serif !important;
+        font-size: 13px !important;
+        font-weight: 600 !important;
+        color: #fff !important;
+      }
+
+      /* ===== PRODUCT CARDS font ===== */
+      .frame1536wdefault-thq-text-elm103,
+      .frame1536wdefault-thq-text-elm108,
+      .frame1536wdefault-thq-text-elm113,
+      .frame1536wdefault-thq-text-elm119,
+      .frame1536wdefault-thq-text-elm133,
+      .frame1536wdefault-thq-text-elm138 {
+        font-family: 'Inter', sans-serif !important;
+        font-size: 11px !important;
+        font-weight: 500 !important;
+      }
+      .frame1536wdefault-thq-text-elm104,
+      .frame1536wdefault-thq-text-elm109,
+      .frame1536wdefault-thq-text-elm114,
+      .frame1536wdefault-thq-text-elm120,
+      .frame1536wdefault-thq-text-elm134,
+      .frame1536wdefault-thq-text-elm139 {
+        font-family: 'Inter', sans-serif !important;
+        font-size: 14px !important;
+        font-weight: 700 !important;
+      }
+      .frame1536wdefault-thq-text-elm106,
+      .frame1536wdefault-thq-text-elm111,
+      .frame1536wdefault-thq-text-elm116,
+      .frame1536wdefault-thq-text-elm122,
+      .frame1536wdefault-thq-text-elm136,
+      .frame1536wdefault-thq-text-elm141 {
+        font-family: 'Inter', sans-serif !important;
+        font-size: 16px !important;
+        font-weight: 700 !important;
+      }
+    </style>
   </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
@@ -1770,6 +1907,38 @@
       </div>
       <link rel="canonical" href="https://web-an7o9n.teleporthq.app/" />
     </div>
+    <script>
+      // Fix product card links -> product-detail
+      var productLinks = [
+        { selector: '.frame1536wdefault-link11', id: 1 },
+        { selector: '.frame1536wdefault-link12', id: 2 },
+        { selector: '.frame1536wdefault-link13', id: 3 },
+        { selector: '.frame1536wdefault-link14', id: 4 },
+        { selector: '.frame1536wdefault-link19', id: 5 },
+        { selector: '.frame1536wdefault-link20', id: 6 },
+        { selector: '.frame1536wdefault-link21', id: 7 },
+        { selector: '.frame1536wdefault-link22', id: 8 },
+      ];
+      productLinks.forEach(function(p) {
+        var el = document.querySelector(p.selector);
+        if (el) {
+          el.href = './product-detail.html?id=' + p.id;
+          el.removeAttribute('target');
+        }
+      });
+
+      // Fix "Xem Tất Cả" links -> product.html (same tab)
+      ['.frame1536wdefault-link10', '.frame1536wdefault-link18'].forEach(function(sel) {
+        var el = document.querySelector(sel);
+        if (el) { el.href = './product.html'; el.removeAttribute('target'); }
+      });
+
+      // Fix menu items -> product.html
+      ['.frame1536wdefault-thq-atextsmmargin-elm2'].forEach(function(sel) {
+        var el = document.querySelector(sel);
+        if (el) { el.style.cursor = 'pointer'; el.onclick = function(){ window.location.href='./product.html'; }; }
+      });
+    </script>
   </body>
 </html>
 
