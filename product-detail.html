@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <title>Chi Tiết Sản Phẩm - Sneaker Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <style data-tag="reset-style-sheet">
+      html{line-height:1.15;}body{margin:0;}*{box-sizing:border-box;border-width:0;border-style:solid;-webkit-font-smoothing:antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}button{background-color:transparent;}button,input{font-family:inherit;font-size:100%;line-height:1.15;margin:0;}a{color:inherit;text-decoration:inherit;}img{display:block;}
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      body { font-family: Inter, sans-serif; background: var(--dl-color-www.figma.com-athensgray); color: var(--dl-color-www.figma.com-codgray); }
+
+      .navbar {
+        width: 100%; background: var(--dl-color-www.figma.com-codgraywhite);
+        display: flex; align-items: center; justify-content: space-between;
+        padding: 16px 32px; position: sticky; top: 0; z-index: 100;
+      }
+      .navbar-logo { color: #fff; font-size: 20px; font-weight: 700; letter-spacing: 2px; }
+      .navbar-links { display: flex; gap: 24px; }
+      .navbar-links a { color: rgba(255,255,255,0.8); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+      .navbar-links a:hover { color: #fff; }
+
+      .breadcrumb { padding: 16px 32px; font-size: 13px; color: var(--dl-color-www.figma.com-palesky); }
+      .breadcrumb a { color: var(--dl-color-www.figma.com-palesky); }
+      .breadcrumb a:hover { color: var(--dl-color-www.figma.com-codgray); }
+      .breadcrumb span { margin: 0 8px; }
+
+      .detail-container {
+        max-width: 1100px; margin: 0 auto; padding: 32px;
+        display: grid; grid-template-columns: 1fr 1fr; gap: 48px;
+      }
+      @media(max-width: 767px) {
+        .detail-container { grid-template-columns: 1fr; padding: 16px; gap: 24px; }
+        .breadcrumb { padding: 16px; }
+      }
+
+      .img-main {
+        width: 100%; aspect-ratio: 1/1; background-size: cover; background-position: center;
+        border-radius: 12px; background-color: var(--dl-color-www.figma.com-athensgray);
+      }
+      .img-thumbs { display: flex; gap: 12px; margin-top: 12px; }
+      .img-thumb {
+        width: 72px; height: 72px; border-radius: 8px; background-size: cover;
+        background-position: center; cursor: pointer; border: 2px solid transparent;
+        background-color: var(--dl-color-www.figma.com-athensgray); transition: border-color 0.2s;
+      }
+      .img-thumb.active { border-color: var(--dl-color-www.figma.com-codgraywhite); }
+
+      .detail-info { display: flex; flex-direction: column; gap: 16px; }
+      .detail-brand { font-size: 13px; color: var(--dl-color-www.figma.com-palesky); font-weight: 500; }
+      .detail-name { font-size: 28px; font-weight: 700; line-height: 1.3; }
+      .detail-category { font-size: 13px; color: var(--dl-color-www.figma.com-palesky); }
+      .detail-badges { display: flex; gap: 8px; flex-wrap: wrap; }
+      .badge { padding: 4px 10px; border-radius: 8px; font-size: 12px; font-weight: 700; color: #fff; }
+      .badge-hot { background: var(--dl-color-www.figma.com-redorange); }
+      .badge-new { background: var(--dl-color-www.figma.com-malachite); }
+      .badge-sale { background: var(--dl-color-www.figma.com-dodgerblue); }
+      .badge-bestseller { background: var(--dl-color-www.figma.com-dodgerblue); }
+
+      .detail-price { font-size: 32px; font-weight: 700; }
+      .detail-divider { height: 1px; background: var(--dl-color-www.figma.com-mischka); }
+
+      .detail-desc { font-size: 15px; line-height: 1.7; color: var(--dl-color-www.figma.com-palesky); }
+
+      .size-label { font-size: 14px; font-weight: 600; margin-bottom: 8px; }
+      .size-grid { display: flex; gap: 8px; flex-wrap: wrap; }
+      .size-btn {
+        width: 48px; height: 48px; border-radius: 8px; border: 1px solid var(--dl-color-www.figma.com-mischka);
+        font-size: 13px; font-weight: 600; cursor: pointer; background: #fff;
+        display: flex; align-items: center; justify-content: center; transition: all 0.2s;
+      }
+      .size-btn:hover, .size-btn.active {
+        background: var(--dl-color-www.figma.com-codgraywhite); color: #fff; border-color: var(--dl-color-www.figma.com-codgraywhite);
+      }
+
+      .btn-buy {
+        padding: 16px; border-radius: 12px; font-size: 16px; font-weight: 700;
+        cursor: pointer; border: none; transition: all 0.2s; text-align: center;
+      }
+      .btn-primary { background: var(--dl-color-www.figma.com-codgraywhite); color: #fff; }
+      .btn-primary:hover { background: #333; }
+      .btn-secondary { background: #fff; color: var(--dl-color-www.figma.com-codgray); border: 2px solid var(--dl-color-www.figma.com-mischka); }
+      .btn-secondary:hover { border-color: var(--dl-color-www.figma.com-codgraywhite); }
+
+      .related-section { max-width: 1100px; margin: 0 auto; padding: 0 32px 48px; }
+      .related-title { font-size: 22px; font-weight: 700; margin-bottom: 24px; }
+      .related-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+      @media(max-width: 900px) { .related-grid { grid-template-columns: repeat(2, 1fr); } }
+      @media(max-width: 479px) { .related-grid { grid-template-columns: repeat(2, 1fr); } .related-section { padding: 0 16px 32px; } }
+
+      .product-card {
+        background: #fff; border-radius: 10px; overflow: hidden;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1); transition: box-shadow 0.2s, transform 0.2s;
+        cursor: pointer; text-decoration: none; color: inherit; display: flex; flex-direction: column;
+      }
+      .product-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.15); transform: translateY(-4px); }
+      .card-img { width: 100%; aspect-ratio: 1/1; background-size: cover; background-position: center; background-color: var(--dl-color-www.figma.com-athensgray); }
+      .card-info { padding: 12px; }
+      .card-brand { font-size: 11px; color: var(--dl-color-www.figma.com-palesky); }
+      .card-name { font-size: 13px; font-weight: 700; margin: 4px 0; }
+      .card-price { font-size: 14px; font-weight: 700; }
+
+      .footer { background: var(--dl-color-www.figma.com-codgraywhite); color: rgba(255,255,255,0.7); padding: 32px; text-align: center; font-size: 14px; margin-top: 0; }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <span class="navbar-logo">SNEAKER STORE</span>
+      <div class="navbar-links">
+        <a href="./index.html">Trang Chủ</a>
+        <a href="./product.html">Sản Phẩm</a>
+        <a href="#">Liên Hệ</a>
+      </div>
+    </nav>
+
+    <div class="breadcrumb">
+      <a href="./index.html">Trang Chủ</a><span>›</span>
+      <a href="./product.html">Sản Phẩm</a><span>›</span>
+      <span id="breadcrumb-name">Chi Tiết</span>
+    </div>
+
+    <div class="detail-container">
+      <div>
+        <div class="img-main" id="mainImg"></div>
+        <div class="img-thumbs" id="thumbs"></div>
+      </div>
+      <div class="detail-info">
+        <div class="detail-brand" id="detailBrand"></div>
+        <div class="detail-name" id="detailName"></div>
+        <div class="detail-category" id="detailCategory"></div>
+        <div class="detail-badges" id="detailBadges"></div>
+        <div class="detail-price" id="detailPrice"></div>
+        <div class="detail-divider"></div>
+        <div class="detail-desc" id="detailDesc"></div>
+        <div>
+          <div class="size-label">Chọn Size</div>
+          <div class="size-grid" id="sizeGrid"></div>
+        </div>
+        <div class="detail-divider"></div>
+        <button class="btn-buy btn-primary" onclick="alert('Tính năng đang phát triển!')">Thêm Vào Giỏ Hàng</button>
+        <button class="btn-buy btn-secondary" onclick="alert('Tính năng đang phát triển!')">Mua Ngay</button>
+      </div>
+    </div>
+
+    <div class="related-section">
+      <div class="related-title">Sản Phẩm Liên Quan</div>
+      <div class="related-grid" id="relatedGrid"></div>
+    </div>
+
+    <footer class="footer">
+      <p>© 2026 Sneaker Store. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const products = [
+        { id: 1, brand: "Jordan x Dior", name: "Air Jordan 1 x Dior High", category: "Dior Collab", price: "85.000.000 ₫", badges: ["hot"], img: "public/tq_gquycljss2-6i4w-1500w.png", desc: "Phiên bản collab độc quyền giữa Air Jordan 1 và nhà mốt Dior. Thiết kế sang trọng với chất liệu da cao cấp, logo Dior thêu tay. Số lượng cực kỳ giới hạn toàn cầu.", sizes: [38,39,40,41,42,43,44] },
+        { id: 2, brand: "Jordan x Travis Scott", name: "Air Jordan 1 x Travis Scott", category: "Travis Scott Collab", price: "42.000.000 ₫", badges: ["hot"], img: "public/tq_ypwzdgntei-cghv-1500w.png", desc: "Collab đình đám giữa Nike và rapper Travis Scott. Đặc trưng với Swoosh ngược và túi tiện ích phía sau. Một trong những đôi được săn đón nhất mọi thời đại.", sizes: [38,39,40,41,42,43,44] },
+        { id: 3, brand: "Nike x Off-White", name: "Nike x Off-White Collection", category: "Off-White Collab", price: "38.000.000 ₫", badges: ["hot"], img: "public/tq_arooc0aocm-oerl-1500w.png", desc: "Bộ sưu tập collab huyền thoại giữa Nike và Virgil Abloh. Thiết kế deconstructed độc đáo với zip tie và chữ in đặc trưng của Off-White.", sizes: [38,39,40,41,42,43,44] },
+        { id: 4, brand: "Nike", name: "Air Jordan 1 Retro High", category: "Basketball", price: "4.200.000 ₫", badges: ["hot","bestseller"], img: "public/tq_8yjdzrca_d-749q-1500w.png", desc: "Huyền thoại bóng rổ từ năm 1985. Air Jordan 1 Retro High mang lại sự thoải mái và phong cách vượt thời gian. Đế Air đệm êm ái, upper da cao cấp.", sizes: [38,39,40,41,42,43,44,45] },
+        { id: 5, brand: "Nike", name: "Air Jordan 1 Retro High OG", category: "Basketball", price: "4.500.000 ₫", badges: ["hot","bestseller"], img: "public/tq_6jjjpnihgu-vif4-1500w.png", desc: "Phiên bản OG chính hãng của Air Jordan 1 Retro High. Chất liệu da thật cao cấp, đế Air cushion nguyên bản. Biểu tượng của văn hóa sneaker toàn cầu.", sizes: [38,39,40,41,42,43,44,45] },
+        { id: 6, brand: "Nike", name: "Air Force 1 Low White", category: "Lifestyle", price: "2.800.000 ₫", badges: ["bestseller"], img: "public/tq_5cykavvul3-uaqp-1500w.png", desc: "Classic trắng tinh khôi không bao giờ lỗi mốt. Air Force 1 Low là đôi giày lifestyle bán chạy nhất lịch sử Nike. Dễ phối đồ, bền bỉ theo thời gian.", sizes: [36,37,38,39,40,41,42,43,44,45] },
+        { id: 7, brand: "Nike", name: "Nike Dunk Low Retro", category: "Lifestyle", price: "3.200.000 ₫", badges: ["new"], img: "public/tq_c-d7d3r4hd-2ul9-1500w.png", desc: "Dunk Low trở lại với thiết kế retro đậm chất thập niên 80. Upper da nhiều màu sắc, đế cao su bền chắc. Phù hợp cả streetwear lẫn casual.", sizes: [36,37,38,39,40,41,42,43,44] },
+        { id: 8, brand: "Adidas", name: "Adidas Yeezy Boost 350", category: "Lifestyle", price: "6.500.000 ₫", badges: ["new"], img: "public/tq_cloclj0emi-9eh4-1500w.png", desc: "Thiết kế bởi Kanye West, Yeezy Boost 350 V2 là biểu tượng của thời trang đường phố hiện đại. Công nghệ Boost mang lại cảm giác đệm tuyệt vời.", sizes: [39,40,41,42,43,44,45] },
+        { id: 9, brand: "Adidas", name: "Adidas Ultraboost 22", category: "Running", price: "4.800.000 ₫", badges: ["hot"], img: "public/tq_fyln7pxnuw-wl3s-1500w.png", desc: "Công nghệ Boost tiên tiến nhất của Adidas. Ultraboost 22 mang lại năng lượng hoàn hảo cho mỗi bước chạy. Thiết kế Primeknit ôm chân thoải mái.", sizes: [38,39,40,41,42,43,44,45] },
+        { id: 10, brand: "Designer", name: "Dunk Low Fits - Women", category: "Women", price: "3.200.000 ₫", badges: ["new"], img: "public/tq_g8dv8a-j3u-8vjj-1500w.png", desc: "Phiên bản Dunk Low dành riêng cho phái nữ. Màu sắc pastel nhẹ nhàng, thiết kế tinh tế. Hoàn hảo để phối cùng các outfit thời trang nữ tính.", sizes: [35,36,37,38,39,40,41] },
+        { id: 11, brand: "Designer", name: "Designer Sunglasses Collection", category: "Accessories", price: "8.200.000 ₫", badges: ["new"], img: "public/tq_o862czeini-d7ov-1500w.png", desc: "Bộ sưu tập kính mắt designer cao cấp. Tròng kính chống UV400, gọng kim loại bền chắc. Phụ kiện hoàn hảo để nâng tầm phong cách.", sizes: [] },
+        { id: 12, brand: "Nike", name: "Nike Air Max 90", category: "Lifestyle", price: "3.600.000 ₫", badges: ["bestseller"], img: "public/tq_pwie4moijp-dvj-1500w.png", desc: "Air Max 90 với cửa sổ Air lớn đặc trưng. Thiết kế retro từ năm 1990 vẫn giữ nguyên sức hút đến ngày nay. Đệm Air êm ái, phong cách không bao giờ lỗi thời.", sizes: [38,39,40,41,42,43,44,45] },
+      ];
+
+      const badgeMap = {
+        hot: '<span class="badge badge-hot">HOT</span>',
+        new: '<span class="badge badge-new">MỚI</span>',
+        sale: '<span class="badge badge-sale">SALE</span>',
+        bestseller: '<span class="badge badge-bestseller">BÁN CHẠY</span>',
+      };
+
+      const params = new URLSearchParams(window.location.search);
+      const id = parseInt(params.get('id')) || 1;
+      const product = products.find(p => p.id === id) || products[0];
+
+      // Set page title
+      document.title = product.name + ' - Sneaker Store';
+      document.getElementById('breadcrumb-name').textContent = product.name;
+
+      // Main image
+      const mainImg = document.getElementById('mainImg');
+      mainImg.style.backgroundImage = `url('${product.img}')`;
+
+      // Thumbs (dùng cùng ảnh, có thể mở rộng sau)
+      const thumbsEl = document.getElementById('thumbs');
+      [product.img].forEach((src, i) => {
+        const t = document.createElement('div');
+        t.className = 'img-thumb' + (i === 0 ? ' active' : '');
+        t.style.backgroundImage = `url('${src}')`;
+        t.onclick = () => {
+          mainImg.style.backgroundImage = `url('${src}')`;
+          document.querySelectorAll('.img-thumb').forEach(x => x.classList.remove('active'));
+          t.classList.add('active');
+        };
+        thumbsEl.appendChild(t);
+      });
+
+      // Info
+      document.getElementById('detailBrand').textContent = product.brand;
+      document.getElementById('detailName').textContent = product.name;
+      document.getElementById('detailCategory').textContent = product.category;
+      document.getElementById('detailPrice').textContent = product.price;
+      document.getElementById('detailDesc').textContent = product.desc;
+      document.getElementById('detailBadges').innerHTML = product.badges.map(b => badgeMap[b] || '').join('');
+
+      // Sizes
+      const sizeGrid = document.getElementById('sizeGrid');
+      if (product.sizes.length === 0) {
+        sizeGrid.parentElement.style.display = 'none';
+      } else {
+        product.sizes.forEach(s => {
+          const btn = document.createElement('button');
+          btn.className = 'size-btn';
+          btn.textContent = s;
+          btn.onclick = () => {
+            document.querySelectorAll('.size-btn').forEach(x => x.classList.remove('active'));
+            btn.classList.add('active');
+          };
+          sizeGrid.appendChild(btn);
+        });
+      }
+
+      // Related products
+      const related = products.filter(p => p.id !== id).slice(0, 4);
+      const relatedGrid = document.getElementById('relatedGrid');
+      related.forEach(p => {
+        const a = document.createElement('a');
+        a.href = `./product-detail.html?id=${p.id}`;
+        a.className = 'product-card';
+        a.innerHTML = `
+          <div class="card-img" style="background-image: url('${p.img}')"></div>
+          <div class="card-info">
+            <div class="card-brand">${p.brand}</div>
+            <div class="card-name">${p.name}</div>
+            <div class="card-price">${p.price}</div>
+          </div>`;
+        relatedGrid.appendChild(a);
+      });
+    </script>
+  </body>
+</html>
